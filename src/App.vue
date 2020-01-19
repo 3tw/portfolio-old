@@ -1,8 +1,14 @@
 <template>
 	<div id="app">
-		<NavBar />
-		<Showcase />
-		<ContactMe />
+		<div class= "main">
+			<div class="top">
+				<NavBar />
+				<Showcase />
+			</div>
+			<div class="bottom">
+				<ContactMe />
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -28,9 +34,28 @@ export default {
 		padding: 0
 
 	body
-		font-family: Arial, Helvetica, sans-serif
-		line-height: 1.4em
-		background-color: $yellow
-		color: $maroon
+		font-family: Muli, sans-serif
+		line-height: 1.6em
+		min-width: 320px
 
+	.main
+		display: flex
+		flex-direction: column
+		height: 100vh
+	.top
+		flex-basis: 60%
+		background-color: $dark
+		color: white
+	.bottom
+		flex-basis: 40%
+		background-color: $dark
+		color: white
+
+	.core-font
+		font-size: 1.2em
+	a
+		color: white
+
+	h1
+		font-family: Helvetica Neue, sans-serif
 </style>
