@@ -4,17 +4,18 @@
 			<div class="navigation">
 				<NavBar @click-btn="clickBtn" />
 			</div>
-			<div class="home" v-show="home">
-				<div class="top">
-					<Showcase />
+			<transition name="fade">
+				<div class="home" v-show="home">
+					<div class="top">
+						<Showcase />
+					</div>
+					<div class="bottom">
+						<ContactMe />
+					</div>
 				</div>
-				<div class="bottom">
-					<ContactMe />
-				</div>
-			</div>
+			</transition>
 			<About :about="about" />
 			<Projects :projects="projects" />
-			
 		</div>
 	</div>
 </template>
@@ -44,21 +45,27 @@ export default {
 	},
 	methods: {
 		clickBtn(e) {
-			if (e == "home" && this.home != true) {
+			if (e == "home") {
 				this.about = false; //try changing to watches
 				this.projects = false;
-				this.home = !this.home;
-			} else if (e == "about" && this.about != true) {
+				setTimeout(() => {
+					this.home = !this.home
+				}, 300)
+			} else if (e == "about") {
 				this.home = false;
 				this.projects = false;
-				this.about = !this.about;
-			} else if (e == "projects" && this.projects != true) {
-				this.home = false;
+				setTimeout(() => {
+					this.about = !this.about
+				}, 300)
+			} else if (e == "projects") {
 				this.about = false;
-				this.projects = !this.projects;
+				this.home = false;
+				setTimeout(() => {
+					this.projects = !this.projects;
+				}, 300)
 			}
 		}
-	},
+	}
 };
 </script>
 
@@ -95,4 +102,15 @@ export default {
 
 	h1
 		font-family: Helvetica Neue, sans-serif
+	
+	//fade transition
+	.fade-enter
+		opacity: 1
+	.fade-enter-active
+		transition: opacity 0.5s ease
+	.fade-leave-active
+		transition: opacity 0.2s ease-out
+	.fade-leave-to
+		opacity: 0
+
 </style>

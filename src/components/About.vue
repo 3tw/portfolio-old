@@ -1,14 +1,18 @@
 <template>
-    <div class="about core-font grid" v-show="about">
-        <p>{{aboutMe}}</p>
-    </div>
+    <transition name="fade">
+        <div class="about core-font grid" v-show="about">
+            <p>{{skillset}}</p>
+        </div>
+    </transition>
 </template>
 
 <script>
 export default {
     data() {
         return{
-            aboutMe:`Hi, my name is Teo`,
+            skillset: `
+                [html, css, javascript, vue.js, jquery, sass, python]
+            `,
         }
     },
     props: {
@@ -20,5 +24,6 @@ export default {
 <style lang="sass" scoped>
     .about
         padding: 1em
+        text-align: center
 
 </style>

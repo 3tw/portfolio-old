@@ -1,7 +1,9 @@
 <template>
-    <div class="projects core-font grid" v-show="projects">
-        <p>{{projDescriptions}}</p>
-    </div>
+    <transition name="fade">
+        <div class="projects core-font grid" v-show="projects">
+            <p>{{projDescriptions}}</p>
+        </div>
+    </transition>
 </template>
 
 <script>
@@ -20,5 +22,6 @@ export default {
 <style lang="sass" scoped>
     .projects
         padding: 1em
+        text-align: center
 
 </style>

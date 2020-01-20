@@ -3,7 +3,6 @@
 		<h1 class="f-name">{{fName}}</h1>
     <h1 class="l-name">{{lName}}</h1>
     <span class="title">{{title}}</span>
-    <!--<p>{{skillset}}</p>-->
 	</div>
 </template>
 
@@ -15,9 +14,6 @@
         lName: `winkler`,
         fName: 'teo',
         title: `FRONT END WEB DEVELOPER`,
-        skillset: `
-          [html, css, javascript, vue.js, jquery, sass, python]
-        `,
       };
     }
   };
