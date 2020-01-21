@@ -1,7 +1,7 @@
 <template>
-	<div class="grid">
-		<h2>{{p1Title}}</h2>
-        <p class="upper-case">{{p1Type}}</p>
+	<div class="content-wrap">
+		<span class="title">{{p1Title}}</span>
+        <p class="">{{p1Type}}</p>
 	</div>
 </template>
 
@@ -9,8 +9,8 @@
 export default {
 	data() {
 		return {
-            p1Title: `Tom's Web Portfolio`,
-            p1Type: `WEBSITE DESIGN`
+            p1Title: `TOM'S WEB PORTFOLIO`,
+            p1Type: `Website design`
 		};
 	}
 };

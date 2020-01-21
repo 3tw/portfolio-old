@@ -1,10 +1,12 @@
 <template>
-	<div class="about core-font grid">
-		<h2>{{headline}}</h2>
-		<br>
-		<p class="bio">{{bio}}</p>
-		<br>
-		<div v-html="skills"></div>
+	<div class="about grid">
+		<div class="content-wrap">
+			<h2>{{headline}}</h2>
+			<br />
+			<p class="bio">{{bio}}</p>
+			<br />
+			<p class="skillset">{{skills}}</p>
+		</div>
 	</div>
 </template>
 
@@ -12,24 +14,23 @@
 export default {
 	data() {
 		return {
-			skills: `My skills include <br>
-                [html, css, javascript, vue.js, jquery, sass, python]
-            `,
+			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
 			headline: `I'm a Front End Web Developer situated in Slovenia.`,
-            bio: `Besides coding, I have an unhealthy obsession with Hegel, thanks to whom I obtained an MA degree in Philsophy at the University of Amsterdam. My healthier obsessions are sports climbing, long-distance running and photography.` 
+			bio: `Besides coding, I have an unhealthy obsession with Hegel that I pursued fat enough to obtain an MA degree in Philosophy at the University of Amsterdam. My healthier obsessions are sport climbing, long-distance running and photography.`
 		};
 	}
 };
 </script>
 
 <style lang="sass" scoped>
-    .about
-        height: calc(100vh - 70px)
-        background: $yellow
-        color: $maroon
-        padding: 1em
-        text-align: left
-    .bio
-        line-height: 1.4em
-
+.about
+	height: calc(100vh - 70px)
+	background: $yellow
+	color: $maroon
+	padding: 1em
+	text-align: left
+.bio
+	line-height: 1.4em
+.skillset
+	text-align: center
 </style>

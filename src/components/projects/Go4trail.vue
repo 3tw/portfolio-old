@@ -1,7 +1,7 @@
 <template>
-	<div class="grid">
-		<h2>{{p2Title}}</h2>
-        <p class="upper-case">{{p2Type}}</p>
+	<div class="content-wrap">
+		<span class="title">{{p2Title}}</span>
+        <p class="">{{p2Type}}</p>
 	</div>
 </template>
 
@@ -11,8 +11,8 @@
 export default {
 	data() {
 		return {
-            p2Title: `Go4trail Website`,
-            p2Type: `WEBSITE DESIGN`
+            p2Title: `GO4TRAIL WEBSITE`,
+            p2Type: `Website design`
         };
 	}
 };

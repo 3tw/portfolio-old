@@ -1,13 +1,12 @@
 <template>
-
-		<div id="home">
-			<div class="top">
-				<Showcase />
-			</div>
-			<div class="bottom">
-				<ContactMe />
-			</div>
+	<div id="home" class="grid">
+		<div class="top content-wrap">
+			<Showcase />
 		</div>
+		<div class="bottom content-wrap">
+			<ContactMe />
+		</div>
+	</div>
 </template>
 
 <script>
@@ -24,16 +23,16 @@ export default {
 </script>
 
 <style lang="sass">
-	#home
-		height: 100vh
-		background-color: $yellow
-		color: $maroon
-		display: flex
-		flex-direction: column
-		height: calc(100vh - 70px)
-		align-items: center
-	.top
-		flex-basis: 62%
-	.bottom
-		flex-basis: 38%
+#home
+	height: 100vh
+	background-color: $yellow
+	color: $maroon
+	display: flex
+	flex-direction: column
+	height: calc(100vh - 70px)
+	align-items: center
+.top
+	flex-basis: 62%
+.bottom
+	flex-basis: 38%
 </style>

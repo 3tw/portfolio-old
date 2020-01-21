@@ -1,7 +1,7 @@
 <template>
-	<div class="grid">
-		<h2>{{p3Title}}</h2>
-        <p class="upper-case">{{p3Type}}</p>
+	<div class="content-wrap">
+		<span class="title">{{p3Title}}</span>
+        <p class="">{{p3Type}}</p>
 	</div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
 	data() {
 		return {
-            p3Title: `Climate Change Prototype`,
+            p3Title: `CLIMATE AWARNESS`,
             p3Type: `Prototype`
 		};
 	}
