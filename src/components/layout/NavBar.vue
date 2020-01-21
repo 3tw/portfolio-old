@@ -1,8 +1,8 @@
 <template>
 	<header class="nav-bar">
-    <button class="btn header" v-on:click ="clickBtn('home')">TW</button>
-    <button class="btn header" v-on:click ="clickBtn('about')">ABOUT</button>
-    <button class="btn header" v-on:click ="clickBtn('projects')">PROJECTS</button>
+    <button class="btn header" @click ="clickBtn('home')">TW</button>
+    <button class="btn header" @click ="clickBtn('about')">ABOUT</button>
+    <button class="btn header" @click ="clickBtn('projects')">PROJECTS</button>
 	</header>
 </template>
 
