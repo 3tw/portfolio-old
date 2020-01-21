@@ -11,7 +11,7 @@
     name: "Showcase",
     data() {
       return {
-        lName: `winkler`,
+        lName: `Winkler`,
         fName: 'teo',
         title: `FRONT END WEB DEVELOPER`,
       };

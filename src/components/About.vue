@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div class="about core-font grid" v-show="about">
+        <div class="about core-font grid">
             <p>{{skillset}}</p>
         </div>
     </transition>
@@ -15,14 +15,14 @@ export default {
             `,
         }
     },
-    props: {
-        about: Boolean
-    }
 }
 </script>
 
 <style lang="sass" scoped>
     .about
+        height: calc(100vh - 70px)
+        background: $yellow
+        color: $maroon
         padding: 1em
         text-align: center
 

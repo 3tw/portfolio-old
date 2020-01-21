@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div class="projects core-font grid" v-show="projects">
+        <div class="projects core-font grid">
             <p>{{projDescriptions}}</p>
         </div>
     </transition>
@@ -12,15 +12,15 @@ export default {
         return{
             projDescriptions:`These are my projects`,
         }
-    },
-    props: {
-        projects: Boolean
     }
 }
 </script>
 
 <style lang="sass" scoped>
     .projects
+        height: 100vh
+        background-color: $yellow
+        color: $maroon
         padding: 1em
         text-align: center
 

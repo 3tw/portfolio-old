@@ -1,43 +1,36 @@
 <template>
-	<header class="nav-bar">
-    <button class="btn header" @click ="clickBtn('home')">TW</button>
-    <button class="btn header" @click ="clickBtn('about')">ABOUT</button>
-    <button class="btn header" @click ="clickBtn('projects')">PROJECTS</button>
+	<header id="nav">
+		<router-link to="/">TW</router-link>
+		<router-link to="/about">ABOUT</router-link>
+		<router-link to="/projects">PROJECTS</router-link>
 	</header>
 </template>
 
 <script>
-  export default {
-    name: "NavBar",
-    data() {
-      return {
-      };
-    },
-    methods: {
-      clickBtn(btn) {
-        this.$emit("click-btn", btn)
-      }
-    }
-  };
+export default {
+	name: "NavBar"
+};
 </script>
 
-<style lang="sass" scoped>
-  .nav-bar
+<style lang="sass" scoped >
+  #nav
     display: flex
+    height: 70px
     align-items: center
     justify-content: center
-    min-height: min-content
-    font-size: 1.8em
-    font-weight: 200
     padding-top: 1em
     padding-bottom: 0.5em
-  button
+    background: $yellow
+
+  #nav a
     padding-right: 0.1em
     padding-left: 0.1em
-    background: none
-    color: inherit
     border: none
     font: inherit
     cursor: pointer
     outline: inherit
+    font-size: 1.8em
+    font-family: Muli, sans-serif
+    font-weight: 200
+    text-decoration: none
 </style>

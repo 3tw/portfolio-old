@@ -14,7 +14,7 @@
     name: "ContactMe",
     data() {
       return {
-          greeting: `let's talk`,
+          greeting: `contact me`,
           links: `
           <a href="https://github.com/3tw" target="_blank" rel="noopener noreferrer">github</a><br>
           <a href="https://www.linkedin.com/in/teo-winkler" target="_blank" rel="noopener noreferrer">linkedin</a><br>
