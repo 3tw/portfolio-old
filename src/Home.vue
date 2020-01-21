@@ -1,12 +1,13 @@
 <template>
-	<div id="home">
-		<div class="top">
-			<Showcase />
+
+		<div id="home">
+			<div class="top">
+				<Showcase />
+			</div>
+			<div class="bottom">
+				<ContactMe />
+			</div>
 		</div>
-		<div class="bottom">
-			<ContactMe />
-		</div>
-	</div>
 </template>
 
 <script>
@@ -30,16 +31,9 @@ export default {
 		display: flex
 		flex-direction: column
 		height: calc(100vh - 70px)
+		align-items: center
 	.top
 		flex-basis: 62%
 	.bottom
 		flex-basis: 38%
-
-	.core-font
-		font-size: 1.2em
-	a
-		color: $maroon
-
-	h1
-		font-family: Helvetica Neue, sans-serif
 </style>

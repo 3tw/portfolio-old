@@ -26,13 +26,12 @@
     line-height: initial
 
   .f-name
-    font-size: 8em
+    font-size: 7em
     margin-bottom: -0.3em
   .l-name
-    font-size: 3em
+    font-size: 2.7em
     padding-bottom: 0.5em
-
   .title
-    font-size: 1.8em
+    font-size:  1.6em
     font-weight: 200
 </style>

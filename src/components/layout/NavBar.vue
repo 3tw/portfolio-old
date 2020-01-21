@@ -29,7 +29,7 @@ export default {
     font: inherit
     cursor: pointer
     outline: inherit
-    font-size: 1.8em
+    font-size: 1.6em
     font-family: Muli, sans-serif
     font-weight: 200
     text-decoration: none

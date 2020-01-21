@@ -3,7 +3,9 @@
 		<div id="nav">
 			<NavBar />
 		</div>
-		<router-view />
+		<transition name="fade">
+			<router-view />
+		</transition>
 	</div>
 </template>
 
@@ -26,17 +28,15 @@ export default {
 
 	body
 		font-family: Muli, sans-serif
-		line-height: 1.6em
+		line-height: 1.4em
 		min-width: 320px
+		font-size: 1.2em
+	a
+		color: $maroon
 
-	//fade transition
-	.fade-enter
-		opacity: 1
-	.fade-enter-active
-		transition: opacity 0.5s ease
-	.fade-leave-active
-		transition: opacity 0.2s ease-out
-	.fade-leave-to
-		opacity: 0
-
+	h1, h2
+		font-family: Helvetica Neue, sans-serif
+	.grid
+		padding: 1em
+		text-align: left
 </style>

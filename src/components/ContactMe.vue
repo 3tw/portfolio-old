@@ -30,6 +30,6 @@
         text-align: center
     .greeting
         padding-bottom: 1em
-        font-size: 2em
+        font-size: 1.6em
         line-height: 0.7em
 </style>
