@@ -15,8 +15,8 @@ export default {
 	data() {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
-			headline: `I'm a Front End Web Developer situated in Slovenia.`,
-			bio: `Besides coding, I have an unhealthy obsession with Hegel that I pursued fat enough to obtain an MA degree in Philosophy at the University of Amsterdam. My healthier obsessions are sport climbing, long-distance running and photography.`
+			headline: `I'm a Front End Web Developer situated in Slovenia`,
+			bio: `I have an odd affection for Hegel that encouraged me to get an MA degree in Philosophy at the University of Amsterdam. That's when I accidentally came across coding. My healthier obsessions are sport climbing, long-distance running and photography.`
 		};
 	}
 };

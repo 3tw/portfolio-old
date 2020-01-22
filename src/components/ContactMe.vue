@@ -19,9 +19,9 @@ export default {
 	data() {
 		return {
 			greeting: `contact me`,
-			email: `<a href="mailto:teo.winkler@gmail.com">email</a>`,
-			github: `<a href="https://github.com/3tw" target="_blank" rel="noopener noreferrer">github</a>`,
-			linkedin: `<a href="https://www.linkedin.com/in/teo-winkler" target="_blank" rel="noopener noreferrer">linkedin</a>`
+			email: `<a href="mailto:teo.winkler@gmail.com">Email</a>`,
+			github: `<a href="https://github.com/3tw" target="_blank" rel="noopener noreferrer">GitHub</a>`,
+			linkedin: `<a href="https://www.linkedin.com/in/teo-winkler" target="_blank" rel="noopener noreferrer">LinkedIn</a>`
 		};
 	}
 };

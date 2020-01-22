@@ -3,9 +3,7 @@
 		<div id="nav">
 			<NavBar />
 		</div>
-		<transition name="fade">
-			<router-view />
-		</transition>
+		<router-view />
 	</div>
 </template>
 
@@ -36,22 +34,43 @@ a
 
 h1, h2
 	font-family: Helvetica Neue, sans-serif
-.grid
-	padding: 1em
-	text-align: left
+
 .title
-  font-size: 1.3em
-  font-weight: 200
+	font-size: 1.3em
+	font-weight: 200
+.proj-title
+	font-size: 1.3em
+.btn
+	border-radius: 3px
+	border-width: 2px
+	border-style: solid
+	display: inline-block
+	text-decoration: none
+	padding-right: 1.2em
+	padding-left: 1.2em
+	padding-top: 0.2em
+	padding-bottom: 0.2em
+	margin-bottom: 0.5em
+	border-color: $maroon
+.btn:hover
+	opacity: 0.3
+	transition: 0.15s ease-out
+
 
 //media queries
 @media screen and ( min-width: 500px )
 	.grid
 		display: grid
-		grid-template-columns: minmax(2em, auto) repeat(2, minmax(auto, 20em)) minmax(2em, auto)
+		grid-template-columns: minmax(2em, auto) repeat(2, minmax(auto, 21em)) minmax(2em, auto)
 	.content-wrap
 		grid-column: 2/4
+	.content-wrap
+		padding-top: 0.5em
+		padding-bottom: 0.5em
 
 @media screen and ( min-width: 700px )
 	.title
+		font-size: 1.6em
+	.proj-title
 		font-size: 1.6em
 </style>

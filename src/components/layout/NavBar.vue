@@ -34,6 +34,10 @@ export default {
   font-weight: 200
   text-decoration: none
 
+#nav a:hover
+  opacity: 0.3
+  transition: 0.15s ease-out
+
 @media screen and ( min-width: 700px )
   #nav a
     padding-right: 0.5em
