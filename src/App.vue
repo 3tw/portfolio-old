@@ -29,10 +29,13 @@ body
 	line-height: 1.4em
 	min-width: 320px
 	font-size: 1.2em
+	width: 100vw
 a
 	color: $maroon
+a:hover
+	opacity: 0.3
 
-h1, h2
+h1
 	font-family: Helvetica Neue, sans-serif
 
 .title
@@ -52,25 +55,53 @@ h1, h2
 	padding-bottom: 0.2em
 	margin-bottom: 0.5em
 	border-color: $maroon
+	margin-right: 0.5em
 .btn:hover
 	opacity: 0.3
 	transition: 0.15s ease-out
+.content-wrap.bottom-pad
+	padding-bottom: 2em
 
+.project-content
+	height: calc(100vh - 70px)
+	background-color: $yellow
+	color: $maroon
+	text-align: left
+	overflow: scroll
+	padding: 1em
+img
+	width: 100%
 
 //media queries
 @media screen and ( min-width: 500px )
 	.grid
 		display: grid
-		grid-template-columns: minmax(2em, auto) repeat(2, minmax(auto, 21em)) minmax(2em, auto)
-	.content-wrap
-		grid-column: 2/4
+		grid-template-columns: minmax(2em, auto) minmax(5em, 8em) repeat(2, minmax(auto, 19em)) minmax(5em, 8em) minmax(2em, auto)
 	.content-wrap
 		padding-top: 0.5em
 		padding-bottom: 0.5em
+	.image-wrap
+		grid-column: 2/6
+		margin-top: 0.5em
+		margin-bottom: 0.5em
+	.mobile
+		grid-column: 2/6
+		min-width: 250px
+		max-wodth: 450px
+		justify-self: center
+	.text-wrap.p1,
+	.text-wrap.p2,
+	.text-wrap.p3,
+		visibility: hidden
+		opacity: 0
 
 @media screen and ( min-width: 700px )
 	.title
 		font-size: 1.6em
 	.proj-title
 		font-size: 1.6em
+
+@media screen and ( min-width: 1000px )
+	.content-wrap
+		grid-column: 3/5
 </style>

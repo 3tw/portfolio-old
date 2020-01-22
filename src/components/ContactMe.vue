@@ -5,9 +5,9 @@
 		</div>
 		<div class="link-container">
 			<span v-html="email"></span>
-			<br />
+			<br>
 			<span v-html="github"></span>
-			<br />
+			<br>
 			<span v-html="linkedin"></span>
 		</div>
 	</div>

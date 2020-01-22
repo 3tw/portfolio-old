@@ -1,11 +1,14 @@
 <template>
 	<div class="about grid">
 		<div class="content-wrap">
-			<h2>{{headline}}</h2>
-			<br />
-			<p class="bio">{{bio}}</p>
-			<br />
+			<span class="proj-title">{{headline}}</span>
+			<br>
+			<br>
+			<span v-html="bio"></span>
+			<br>
+			<br>
 			<p class="skillset">{{skills}}</p>
+
 		</div>
 	</div>
 </template>
@@ -15,8 +18,8 @@ export default {
 	data() {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
-			headline: `I'm a Front End Web Developer situated in Slovenia`,
-			bio: `I have an odd affection for Hegel that encouraged me to get an MA degree in Philosophy at the University of Amsterdam. That's when I accidentally came across coding. My healthier obsessions are sport climbing, long-distance running and photography.`
+			headline: `I'm a Front End Web Developer from Slovenia`,
+			bio: `My  affection for Hegel encouraged me to get an MA degree in Philosophy at the University of Amsterdam. That's when I accidentally came across coding. My healthier obsessions are sport climbing, long-distance running and photography. I would love to hear from you, so don't hesitate to send me an <a href="mailto:teo.winkler@gmail.com">email</a>.`,
 		};
 	}
 };
