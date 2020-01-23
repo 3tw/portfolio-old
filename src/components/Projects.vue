@@ -23,18 +23,18 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" >
 .projects
 	height: calc(100vh - 70px)
 	background-color: $yellow
 	color: $maroon
 	text-align: center
 	overflow: scroll
-.image-wrap
+.proj-wrap
 	position: relative
 	width: 100%
 	line-height: 0
-.image-wrap:hover .text-wrap
+.proj-wrap:hover .text-wrap
 	visibility: visible
 	opacity: 1
 .text-wrap

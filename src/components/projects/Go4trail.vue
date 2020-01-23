@@ -17,10 +17,13 @@
 			<p class="proj-description">{{description3}}</p>
 		</div>
 		<div class="mobile">
-			<img src="@/assets/images/p2mobile2.jpg" alt="cover-photo" />
+			<img src="@/assets/images/p2mobile.jpg" alt="cover-photo" />
 		</div>
 		<div class="content-wrap">
 			<span v-html="description4" class="proj-description"></span>
+		</div>
+		<div class="mobile">
+			<img src="@/assets/images/p2mobile2.jpg" alt="cover-photo" />
 		</div>
 		<br />
 		<br />
@@ -42,10 +45,10 @@ export default {
 	data() {
 		return {
 			p1Title: `Go4trail`,
-			description1: `Tom is a scultor. He is also my brother. What he asked for was a portfolio with a lot of white space that gets gradualy filled up with content. The design had to be minimalistic with a paper-like feel to it.`,
-			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,
-			description3: `The asymetric design of the grid allows just enough space for the text while retaining the visual presence of the gallery.`,
-			description4: `The website runs on vanilla JS. The gallery is the the only exception. I utilised <a href="https://fancyapps.com/fancybox/3/">Fancybox</a>, JavaScript lightbox library that was easy to implement once the website was almost finished, without sacrifcing the aestcehtics.`,
+			description1: `This is a race I am really passionate about. It takes place in the proximity of my home town near the Slovenian border with Italy. I ran the race myself in 2019. That is when I heard that organizers wanted to rebrand the event in the 2020. Here is where I jumped in. The goal was clear. We wanted to make a wesite that will be easy to use especially for those who spend less time online and more time running.`,
+			description2: `Thus I had to design a UI that allows the user to quckly skim through and apply as well as to find extensive informations regarding the race without getting lost in the subpages.`,
+			description3: `I started with mobile-first approach and gradually adjusted the website for bigger screens. Once I was satisfied with the architecture I introduced Slovenian pages. One can easily switch between Slovene and English by clicking language switch in the navigation bar or menu on the mobile screens.`,
+			description4: `Finally, the website features a contact-form, which is handled by a third party. Clientside validation is handled with <a href="https://jqueryvalidation.org" target="_blank" rel="noopener noreferrer">jQuery Validation Plugin</a>.`,
 		};
 	},
 };

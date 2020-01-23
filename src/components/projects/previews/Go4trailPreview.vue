@@ -1,5 +1,5 @@
 <template>
-	<div class="image-wrap">
+	<div class="proj-wrap">
 		<img src="@/assets/images/p2cover1.jpg" alt="cover-photo" />
 		<div class="text-wrap p2">
 			<div class="image-text">

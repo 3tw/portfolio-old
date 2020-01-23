@@ -19,7 +19,7 @@ export default {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
 			headline: `I'm a Front End Web Developer from Slovenia`,
-			bio: `My  affection for Hegel encouraged me to get an MA degree in Philosophy at the University of Amsterdam. That's when I accidentally came across coding. My healthier obsessions are sport climbing, long-distance running and photography. I would love to hear from you, so don't hesitate to send me an <a href="mailto:teo.winkler@gmail.com">email</a>.`,
+			bio: `I graduated with an MA degree in Philosophy at the University of Amsterdam. That's when I came across coding. When I am not in front of the computer screen I enjoy sport climbing, long-distance running and photography. I would love to hear from you, so don't hesitate to send me an <a href="mailto:teo.winkler@gmail.com">email</a>.`,
 		};
 	}
 };

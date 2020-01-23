@@ -19,9 +19,6 @@
 		<div class="mobile">
 			<img src="@/assets/images/p3gif-small.gif" alt="cover-photo" />
 		</div>
-		<div class="content-wrap">
-			<span v-html="description4" class="proj-description"></span>
-		</div>
 		<br />
 		<br />
 		<div class="content-wrap center bottom-pad">
@@ -31,7 +28,6 @@
 				rel="noopener noreferrer"
 				class="btn"
 			>View on GitHub</a>
-			<a class="btn">Soon Online</a>
 		</div>
 	</div>
 </template>
@@ -41,10 +37,9 @@ export default {
 	data() {
 		return {
 			p1Title: `Climate Awarness Prototype`,
-			description1: `Tom is a scultor. He is also my brother. What he asked for was a portfolio with a lot of white space that gets gradualy filled up with content. The design had to be minimalistic with a paper-like feel to it.`,
-			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,
-			description3: `The asymetric design of the grid allows just enough space for the text while retaining the visual presence of the gallery.`,
-			description4: `The website runs on vanilla JS. The gallery is the the only exception. I utilised <a href="https://fancyapps.com/fancybox/3/">Fancybox</a>, JavaScript lightbox library that was easy to implement once the website was almost finished, without sacrifcing the aestcehtics.`,
+			description1: `The challenge was to come up with an idea that would communicate the climate crisis to the user. This prototype was created as a part of my application for the people.ooo workshop. I approached the task by transgressing the "user-first" paradigm. This project shows that the disruptive nature of climate change shouldn't be merely given as a consumable content.`,
+			description2: `A wall of text covers the webpage. It is discouraging. But even if the user decides to read through it, he cannot finish. The text slowly fades away and two short sentences appear. One after another.`,
+			description3: `The message is mediated as a disorder. The user is interrupted and for a brief moment reminded that he cannot hide from the disastrous reality. Climate change suddenly affects not only the planet but his online experience.`
 		};
 	},
 };

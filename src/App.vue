@@ -76,10 +76,15 @@ img
 @media screen and ( min-width: 500px )
 	.grid
 		display: grid
-		grid-template-columns: minmax(2em, auto) minmax(5em, 8em) repeat(2, minmax(auto, 19em)) minmax(5em, 8em) minmax(2em, auto)
-	.content-wrap
+		grid-template-columns: minmax(2em, auto) minmax(5em, 8em) repeat(2, minmax(auto, 20em)) minmax(5em, 8em) minmax(2em, auto)
+	.content-wrap,
+		grid-column: 2/6
 		padding-top: 0.5em
 		padding-bottom: 0.5em
+	.proj-wrap
+		grid-column: 3/5
+		margin-top: 0.5em
+		margin-bottom: 0.5em
 	.image-wrap
 		grid-column: 2/6
 		margin-top: 0.5em
