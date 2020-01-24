@@ -53,7 +53,7 @@ export default {
 			description1: `Tom is a scultor. He is also my brother. What he asked for was a portfolio with a lot of white space that gets gradualy filled up with content. The design had to be minimalistic with a paper-like feel to it.`,
 			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,
 			description3: `The asymetric design of the grid allows just enough space for the text while retaining the visual presence of the gallery.`,
-			description4: `WHile this website runs on vanilla JS, the gallery utilises <a href="https://fancyapps.com/fancybox/3/" target="_blank" rel="noopener noreferrer>Fancybox</a>, JavaScript lightbox library. It was easy to implement once the website was almost finished, without sacrifcing the aestcehtics.`,
+			description4: `While this website runs on vanilla JS, the gallery utilises <a href="https://fancyapps.com/fancybox/3/" target="_blank" rel="noopener noreferrer">Fancybox</a>, JavaScript lightbox library. It was easy to implement once the website was almost finished, without sacrifcing the aestcehtics.`,
 			description5: `Fancybox also works on mobile screen. Columns become rows and the navigation buttons are set on top, without colapsing in a hamburger menu. Meanwhile the gallery preserves its shape.`
 		};
 	},
@@ -65,7 +65,7 @@ export default {
 	padding-bottom: 2em
 	img
 		padding-top: 1em
-		padding-bottom: 2em
+		padding-bottom: 1em
 .content-wrap.center
 	justify-self: center
 

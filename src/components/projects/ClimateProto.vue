@@ -50,7 +50,7 @@ export default {
 	padding-bottom: 2em
 	img
 		padding-top: 1em
-		padding-bottom: 2em
+		padding-bottom: 1em
 .content-wrap.center
 	justify-self: center
 

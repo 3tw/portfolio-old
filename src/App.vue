@@ -26,7 +26,7 @@ export default {
 
 body
 	font-family: Muli, sans-serif
-	line-height: 1.4em
+	line-height: 1.8em
 	min-width: 320px
 	font-size: 1.2em
 	width: 100vw
@@ -76,7 +76,8 @@ img
 @media screen and ( min-width: 500px )
 	.grid
 		display: grid
-		grid-template-columns: minmax(2em, auto) minmax(5em, 8em) repeat(2, minmax(auto, 20em)) minmax(5em, 8em) minmax(2em, auto)
+		grid-template-columns: minmax(2em, auto) minmax(auto, 8em) repeat(2, minmax(5em, 20em)) minmax(auto, 8em) minmax(2em, auto)
+		grid-auto-rows: min-content
 	.content-wrap,
 		grid-column: 2/6
 		padding-top: 0.5em
