@@ -1,7 +1,7 @@
 <template>
 	<div class="about grid">
 		<div class="content-wrap">
-			<span class="proj-title">{{headline}}</span>
+			<h2>{{headline}}</h2>
 			<br>
 			<br>
 			<span v-html="bio"></span>
@@ -19,7 +19,7 @@ export default {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
 			headline: `I'm a Front End Web Developer from Slovenia`,
-			bio: `I graduated with an MA degree in Philosophy at the University of Amsterdam. That's when I came across coding. When I am not in front of the computer screen I enjoy sport climbing, long-distance running and photography. I would love to hear from you, so don't hesitate to send me an <a href="mailto:teo.winkler@gmail.com">email</a>.`,
+			bio: `In 2019 I graduated with an MA degree in Philosophy at the University of Amsterdam. That's when I came across coding. If I am not in front of the computer screen I enjoy sport climbing, long-distance running and photography. I would love to hear from you, so don't hesitate to send me an <a href="mailto:teo.winkler@gmail.com">email</a>.`,
 		};
 	}
 };

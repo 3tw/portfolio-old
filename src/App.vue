@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 *
 	box-sizing: border-box
 	margin: 0
@@ -35,12 +37,12 @@ a
 a:hover
 	opacity: 0.3
 
-h1
-	font-family: Helvetica Neue, sans-serif
+h1, h2
+	font-family: Arial, sans-serif
 
-.title
-	font-size: 1.3em
-	font-weight: 200
+h2
+	font-weight: lighter
+
 .proj-title
 	font-size: 1.3em
 .btn

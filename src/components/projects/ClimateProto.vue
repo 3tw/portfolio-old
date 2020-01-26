@@ -1,6 +1,6 @@
 <template>
 	<div class="grid project-content content-1">
-		<span class="proj-title content-wrap">{{p1Title}}</span>
+		<h1 class="content-wrap">{{p1Title}}</h1>
 		<div class="content-wrap">
 			<p class="proj-description">{{description1}}</p>
 		</div>

@@ -2,7 +2,7 @@
 	<div class="showcase">
 		<h1 class="f-name">{{fName}}</h1>
 		<h1 class="l-name">{{lName}}</h1>
-		<span class="title">{{title}}</span>
+		<h2 class="title">{{title}}</h2>
 	</div>
 </template>
 

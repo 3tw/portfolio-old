@@ -1,8 +1,8 @@
 <template>
 	<header id="nav">
-		<router-link to="/">TW</router-link>
-		<router-link to="/about">ABOUT</router-link>
-		<router-link to="/projects">PROJECTS</router-link>
+		<router-link to="/">&lt;</router-link>
+		<router-link to="/about">about</router-link>
+		<router-link to="/projects">projects</router-link>
 	</header>
 </template>
 
@@ -30,8 +30,8 @@ export default {
   cursor: pointer
   outline: inherit
   font-size: 1.4em
-  font-family: Muli, sans-serif
-  font-weight: 200
+  font-family: 'Muli', sans-serif
+  font-weight: 300
   text-decoration: none
 
 #nav a:hover

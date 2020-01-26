@@ -7,14 +7,5 @@ module.exports = {
                 prependData: `@import "@/styles/_variables.sass";`
             }
         }
-    },
-    chainWebpack: config => {
-        [
-            new GoogleFontsPlugin({
-                fonts: [
-                    { family: "Muli", variants: ["200"] }
-                ]
-            })
-        ]
-     }
-};
+    }
+ }

@@ -1,6 +1,6 @@
 <template>
 	<div class="grid project-content content-1">
-		<span class="proj-title content-wrap">{{p1Title}}</span>
+		<h1 class="content-wrap">{{p1Title}}</h1>
 		<div class="content-wrap">
 			<p class="proj-description">{{description1}}</p>
 		</div>
@@ -54,7 +54,7 @@ export default {
 			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,
 			description3: `The asymetric design of the grid allows just enough space for the text while retaining the visual presence of the gallery.`,
 			description4: `While this website runs on vanilla JS, the gallery utilises <a href="https://fancyapps.com/fancybox/3/" target="_blank" rel="noopener noreferrer">Fancybox</a>, JavaScript lightbox library. It was easy to implement once the website was almost finished, without sacrifcing the aestcehtics.`,
-			description5: `Fancybox also works on mobile screen. Columns become rows and the navigation buttons are set on top, without colapsing in a hamburger menu. Meanwhile the gallery preserves its shape.`
+			description5: `On mobile sreen columns become rows, while the gallery preserves its shape. The navigation buttons are moved to the top of the screen. We wanted to keep them as an integral part of the layout. Therefore they were not replaced with a menu icon.`
 		};
 	},
 };
