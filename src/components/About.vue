@@ -1,8 +1,7 @@
 <template>
-	<div class="about grid">
-		<div class="content-wrap">
-			<h2>{{headline}}</h2>
-			<br>
+	<div id="about" class="grid">
+		<div class="text-left top-margin-5 bottom-padding-3">
+			<span>{{headline}}</span>
 			<br>
 			<span v-html="bio"></span>
 			<br>
@@ -26,14 +25,16 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.about
-	height: calc(100vh - 70px)
-	background: $yellow
-	color: $maroon
-	padding: 1em
+#about
+	//height: calc(100vh - 3.125rem - 4.5rem - 5rem) //- footer - navBar - padding-top-5
+	background: $white
+	color: $black
+	margin: 0 1.5rem 0 1.5rem 
 	text-align: left
-.bio
-	line-height: 1.4em
-.skillset
-	text-align: center
+.text-left
+	line-height: 2rem
+	font-size: 1.5rem
+@media screen and ( min-width: 700px )
+	#about
+		margin: 0 3.175rem 0 3.175rem
 </style>

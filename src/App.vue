@@ -3,17 +3,24 @@
 		<div id="nav">
 			<NavBar />
 		</div>
-		<router-view />
+		<div id="main">
+			<router-view />
+		</div>
+		<div id="foot">
+			<Footer />
+		</div>
 	</div>
 </template>
 
 <script>
 import NavBar from "./components/layout/NavBar.vue";
+import Footer from "./components/layout/Footer.vue";
 
 export default {
 	name: "app",
 	components: {
-		NavBar
+		NavBar,
+		Footer
 	}
 };
 </script>
@@ -26,22 +33,38 @@ export default {
 	margin: 0
 	padding: 0
 
+html
+	font-size: 16px
+
 body
 	font-family: Muli, sans-serif
-	line-height: 1.8em
+	line-height: 1.4em
 	min-width: 320px
-	font-size: 1.2em
 	width: 100vw
+	height: 100vh
 a
-	color: $maroon
-a:hover
-	opacity: 0.3
+	color: $black
+	text-decoration: none
 
 h1, h2
 	font-family: Arial, sans-serif
 
 h2
 	font-weight: lighter
+
+#app
+	height: 100%
+	display: flex
+	flex-direction: column
+
+#nav
+	flex: 0 0 4.5rem
+
+#main
+	flex: 1 0 auto
+
+#foot
+	flex: 0 0 3.1rem
 
 .proj-title
 	font-size: 1.3em
@@ -61,6 +84,18 @@ h2
 .btn:hover
 	opacity: 0.3
 	transition: 0.15s ease-out
+
+img
+	width: 100%
+
+.top-margin-5
+	margin-top: 5rem
+
+.bottom-padding-3
+	padding-bottom: 3rem
+
+//old
+
 .content-wrap.bottom-pad
 	padding-bottom: 2em
 
@@ -71,15 +106,16 @@ h2
 	text-align: left
 	overflow: scroll
 	padding: 1em
-img
-	width: 100%
-
 //media queries
 @media screen and ( min-width: 500px )
 	.grid
 		display: grid
-		grid-template-columns: minmax(2em, auto) minmax(auto, 8em) repeat(2, minmax(5em, 20em)) minmax(auto, 8em) minmax(2em, auto)
-		grid-auto-rows: min-content
+		grid-template-columns: repeat(4, 1fr)
+		grid-gap: 1rem
+	.text-left
+		grid-column: 1/4
+
+	//old	
 	.content-wrap,
 		grid-column: 2/6
 		padding-top: 0.5em
@@ -95,7 +131,7 @@ img
 	.mobile
 		grid-column: 2/6
 		min-width: 250px
-		max-wodth: 450px
+		max-width: 450px
 		justify-self: center
 	.text-wrap.p1,
 	.text-wrap.p2,

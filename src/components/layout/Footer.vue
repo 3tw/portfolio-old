@@ -1,25 +1,19 @@
 <template>
-	<div class="contact-me">
-		<div class="greeting">
-			<span>{{greeting}}</span>
-		</div>
+	<footer id="footer">
 		<div class="link-container">
 			<span v-html="email"></span>
-			<br>
 			<span v-html="github"></span>
-			<br>
 			<span v-html="linkedin"></span>
 		</div>
-	</div>
+	</footer>
 </template>
 
 <script>
 export default {
-	name: "ContactMe",
+    name: "Footer",
 	data() {
 		return {
-			greeting: `contact me`,
-			email: `<a href="mailto:teo.winkler@gmail.com">Email</a>`,
+			email: `<a href="mailto:teo.winkler@gmail.com">@</a>`,
 			github: `<a href="https://github.com/3tw" target="_blank" rel="noopener noreferrer">GitHub</a>`,
 			linkedin: `<a href="https://www.linkedin.com/in/teo-winkler" target="_blank" rel="noopener noreferrer">LinkedIn</a>`
 		};
@@ -27,11 +21,19 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-.contact-me
-  text-align: center
-.greeting
-  padding-bottom: 1em
-  font-size: 1.6em
-  line-height: 0.7em
+<style lang="sass" scoped >
+#footer
+	margin: 0 1.5rem 0 1.5rem 
+	height: 3.1rem
+
+.link-container
+    text-align: right
+    font-size: 1.5rem
+
+.link-container span
+    padding-left: 1.5rem
+
+@media screen and ( min-width: 700px )
+	#footer
+		margin: 0 3.175rem 0 3.175rem
 </style>

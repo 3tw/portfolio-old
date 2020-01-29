@@ -1,38 +1,31 @@
 <template>
-	<div id="home" class="grid">
-		<div class="top content-wrap">
+	<div id="home">
+		<div>
 			<Showcase />
-		</div>
-		<div class="bottom content-wrap">
-			<ContactMe />
 		</div>
 	</div>
 </template>
 
 <script>
 import Showcase from "./components/Showcase.vue";
-import ContactMe from "./components/ContactMe.vue";
 
 export default {
 	name: "home",
 	components: {
-		Showcase,
-		ContactMe
-	}
+		Showcase
+	},
 };
 </script>
 
 <style lang="sass">
 #home
-	height: 100vh
-	background-color: $yellow
-	color: $maroon
+	background-color: $white
 	display: flex
 	flex-direction: column
-	height: calc(100vh - 70px)
+	//height: calc(100vh - 3.125rem - 4.5rem)
 	align-items: center
-.top
-	flex-basis: 62%
-.bottom
-	flex-basis: 38%
+
+.content-wrap
+	position: relative
+	top: 25%
 </style>

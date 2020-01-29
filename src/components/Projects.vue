@@ -1,8 +1,8 @@
 <template>
 	<div class="projects grid">
-		<TomPreview />
-		<Go4trailPreview />
 		<ClimatePreview />
+		<Go4trailPreview />
+		<TomPreview />
 	</div>
 </template>
 
