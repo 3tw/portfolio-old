@@ -24,7 +24,10 @@ export default {
 <style lang="sass" scoped >
 #footer
 	margin: 0 1.5rem 0 1.5rem 
-	height: 3.1rem
+	height: 5rem
+	display: flex
+	align-items: center
+	justify-content: end
 
 .link-container
     text-align: right

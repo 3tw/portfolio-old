@@ -1,6 +1,6 @@
 <template>
 	<div id="about" class="grid">
-		<div class="text-left top-margin-5 bottom-padding-3">
+		<div class="text-left top-margin-4 bottom-padding-3">
 			<span>{{headline}}</span>
 			<br>
 			<span v-html="bio"></span>

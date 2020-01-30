@@ -35,12 +35,12 @@ export default {
 
 html
 	font-size: 16px
+	min-height: 100%
 
 body
 	font-family: Muli, sans-serif
 	line-height: 1.4em
 	min-width: 320px
-	width: 100vw
 	height: 100vh
 a
 	color: $black
@@ -58,13 +58,13 @@ h2
 	flex-direction: column
 
 #nav
-	flex: 0 0 4.5rem
+	flex: 0 0 5rem
 
 #main
 	flex: 1 0 auto
 
 #foot
-	flex: 0 0 3.1rem
+	flex: 0 0 5rem
 
 .proj-title
 	font-size: 1.3em
@@ -88,8 +88,8 @@ h2
 img
 	width: 100%
 
-.top-margin-5
-	margin-top: 5rem
+.top-margin-4
+	margin-top: 4rem
 
 .bottom-padding-3
 	padding-bottom: 3rem

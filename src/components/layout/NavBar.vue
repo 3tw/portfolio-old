@@ -48,6 +48,7 @@ export default {
   align-items: end
   justify-content: space-between
   background: $white
+  padding-bottom: 0.5rem
   margin: 0 1.5rem 0 1.5rem 
 
 #navBar a
