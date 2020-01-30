@@ -64,23 +64,29 @@ export default {
 	padding-bottom: 1em
 	font-size: 1.4rem
 
-@media screen and ( min-width: 500px )
+::-webkit-scrollbar-track
+	background: $black
+
+@media screen and ( min-width: 700px )
 	.item-title
 		font-weight: bold
 	.projects-grid
 		display: grid
-		grid-template-columns: repeat(3, calc(75% - 2rem * 2))
-		grid-template-rows: minmax(300px, 1fr)
+		grid-template-columns: repeat(3, calc(75% - 0.5rem * 2))
+		grid-template-rows: minmax(100px, 1fr)
 		grid-gap: 2rem
 		overflow-x: scroll
 		overflow-y: hidden
 		scroll-snap-type: x proximity
 		margin-left: 3.175rem
 		margin-right: 3.175rem
+	.projects-grid:hover
+		overflow-x: auto
 
 	.project-item
 		scroll-snap-align: center
-	.item-wrap img,
+	.item-wrap img
+		border-radius: 10px
 	.hover-text-wrap
 		border-radius: 8px
 	.hover-text-wrap.p1,

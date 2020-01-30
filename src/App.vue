@@ -120,7 +120,7 @@ a.btn
 
 
 //media queries
-@media screen and ( min-width: 500px )
+@media screen and ( min-width: 700px )
 	.grid
 		display: grid
 		grid-template-columns: repeat(4, 1fr)
@@ -139,11 +139,10 @@ a.btn
 		grid-column: 3/4
 	.column-3-5
 		grid-column: 3/5
+	.column-4-5
+		grid-column: 4/5
 	.column-center
 		grid-column: 2/4
-	
-
-@media screen and ( min-width: 700px )
 	.title
 		font-size: 1.6em
 	.item-title

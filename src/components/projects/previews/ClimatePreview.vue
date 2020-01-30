@@ -15,7 +15,7 @@
 export default {
 	data() {
 		return {
-			p3Title: `CLIMATE AWARNESS`,
+			p3Title: `CLIMATE AWARENESS`,
 			p3Type: `Prototype`
 		};
 	}
