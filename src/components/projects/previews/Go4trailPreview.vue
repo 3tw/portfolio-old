@@ -1,6 +1,6 @@
 <template>
 	<div class="proj-wrap">
-		<img src="@/assets/images/p2cover1.jpg" alt="cover-photo" />
+		<img src="@/assets/images/t3v-cover.jpg" alt="cover-photo" />
 		<div class="text-wrap p2">
 			<div class="image-text">
 				<span class="proj-title">{{p2Title}}</span>
@@ -15,7 +15,7 @@
 export default {
 	data() {
 		return {
-			p2Title: `GO4TRAIL WEBSITE`,
+			p2Title: `T3V WEBSITE`,
 			p2Type: `Website design`
 		};
 	}
@@ -24,5 +24,5 @@ export default {
 
 <style lang="sass" scoped>
 .text-wrap.p2
-	background-color: #87c5be
+	background-color: #00d3c8
 </style>

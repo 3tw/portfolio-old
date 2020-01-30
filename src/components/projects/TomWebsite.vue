@@ -5,31 +5,7 @@
 			<p class="proj-description">{{description1}}</p>
 		</div>
 		<div class="image-wrap">
-			<img src="@/assets/images/p1cover1.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<p class="proj-description">{{description2}}</p>
-		</div>
-		<div class="image-wrap">
-			<img src="@/assets/images/p1cover2.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<p class="proj-description">{{description3}}</p>
-		</div>
-		<div class="image-wrap">
-			<img src="@/assets/images/p1cover3.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<span v-html="description4" class="proj-description"></span>
-		</div>
-		<div class="image-wrap">
-			<img src="@/assets/images/p1gallery.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<p class="proj-description">{{description5}}</p>
-		</div>
-		<div class="mobile">
-			<img src="@/assets/images/p1mobile.jpg" alt="cover-photo" />
+			<img src="" alt="cover-photo" />
 		</div>
 		<br />
 		<br />

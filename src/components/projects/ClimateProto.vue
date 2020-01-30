@@ -5,19 +5,7 @@
 			<p class="proj-description">{{description1}}</p>
 		</div>
 		<div class="image-wrap">
-			<img src="@/assets/images/p3cover2.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<p class="proj-description">{{description2}}</p>
-		</div>
-		<div class="image-wrap">
-			<img src="@/assets/images/p3cover1.jpg" alt="cover-photo" />
-		</div>
-		<div class="content-wrap">
-			<p class="proj-description">{{description3}}</p>
-		</div>
-		<div class="mobile">
-			<img src="@/assets/images/p3gif-small.gif" alt="cover-photo" />
+			<img src="" alt="cover-photo" />
 		</div>
 		<br />
 		<br />

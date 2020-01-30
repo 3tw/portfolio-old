@@ -1,6 +1,6 @@
 <template>
 	<div class="proj-wrap">
-		<img src="@/assets/images/p3cover1.jpg" alt="cover-photo" />
+		<img src="@/assets/images/climate-cover3.png" alt="cover-photo" />
 		<div class="text-wrap p3">
 			<div class="image-text">
 				<span class="proj-title">{{p3Title}}</span>
@@ -24,5 +24,5 @@ export default {
 
 <style lang="sass" scoped>
 .text-wrap.p3
-	background-color: #111111
+	background-color: $yellow
 </style>

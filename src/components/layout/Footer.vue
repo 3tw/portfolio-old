@@ -27,7 +27,7 @@ export default {
 	height: 5rem
 	display: flex
 	align-items: center
-	justify-content: end
+	justify-content: flex-end
 
 .link-container
     text-align: right

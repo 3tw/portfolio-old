@@ -1,6 +1,6 @@
 <template>
 	<div class="proj-wrap">
-		<img src="@/assets/images/p1cover3.jpg" alt="cover-photo" />
+		<img src="@/assets/images/tom-exh-menu.png" alt="cover-photo" />
 		<div class="text-wrap p1">
 			<div class="image-text">
 				<span class="proj-title">{{p1Title}}</span>
