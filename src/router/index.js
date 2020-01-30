@@ -29,9 +29,9 @@ const routes = [
     component: () => import('../components/projects/TomWebsite.vue')
   },
   {
-    path: '/projects/go4trail',
-    name: 'Go4trail',
-    component: () => import('../components/projects/Go4trail.vue')
+    path: '/projects/t3v',
+    name: 'T3V',
+    component: () => import('../components/projects/T3V.vue')
   },
   {
     path: '/projects/climate-prototype',

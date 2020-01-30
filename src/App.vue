@@ -27,7 +27,7 @@ export default {
 
 <style lang="sass">
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+//general
 *
 	box-sizing: border-box
 	margin: 0
@@ -46,11 +46,9 @@ a
 	color: $black
 	text-decoration: none
 
-h1, h2
-	font-family: Arial, sans-serif
-
-h2
-	font-weight: lighter
+h1
+	font-family: Muli, sans-serif
+	font-size: 1.875rem
 
 #app
 	height: 100%
@@ -87,11 +85,39 @@ a.btn
 
 .top-margin-4
 	margin-top: 4rem
-
+.top-margin-2
+	margin-top: 2rem
+.top-padding-2
+	padding-top: 2rem
+.top-padding-3
+	padding-top: 3rem
 .bottom-padding-3
 	padding-bottom: 3rem
+.bottom-padding-1
+	padding-bottom: 1rem
+.column-center
+	text-align: center
+.underline
+	text-decoration: underline
 
-//old
+// project display
+.project-content
+	margin: 0 1.5rem 0 1.5rem 
+.proj-title
+	text-align: left
+	line-height: 2rem
+.proj-description p,
+.proj-description span
+	line-height: 2rem
+	font-size: 1.5rem
+	color: $black
+.image-wrap
+	width: 100%
+	line-height: 0
+	position: relative
+.image-wrap img
+	width: 100%
+
 
 //media queries
 @media screen and ( min-width: 500px )
@@ -99,14 +125,30 @@ a.btn
 		display: grid
 		grid-template-columns: repeat(4, 1fr)
 		grid-gap: 1rem
-	.text-left
+	.column-1-5
+		grid-column: 1/5
+	.column-1-4
 		grid-column: 1/4
+	.column-1-3
+		grid-column: 1/3
+	.column-1-2
+		grid-column: 1/2
+	.column-2-3
+		grid-column: 2/3
+	.column-3-4
+		grid-column: 3/4
+	.column-3-5
+		grid-column: 3/5
+	.column-center
+		grid-column: 2/4
 	
 
 @media screen and ( min-width: 700px )
 	.title
 		font-size: 1.6em
-	.proj-title
+	.item-title
 		font-size: 1.6em
-
+	.project-content
+		margin: 0 3.175rem 0 3.175rem
+	
 </style>

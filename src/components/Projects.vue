@@ -1,10 +1,10 @@
 <template>
-	<div class="projects projects-grid top-margin-4">
+	<div class="projects projects-grid top-margin-4 bottom-padding-1">
 		<div class="project-item">
 			<ClimatePreview />
 		</div>
 		<div class="project-item">
-			<Go4trailPreview />
+			<T3VPreview />
 		</div>
 		<div class="project-item">
 			<TomPreview />
@@ -14,7 +14,7 @@
 
 <script>
 import TomPreview from "./projects/previews/TomPreview.vue";
-import Go4trailPreview from "./projects/previews/Go4trailPreview.vue";
+import T3VPreview from "./projects/previews/T3VPreview.vue";
 import ClimatePreview from "./projects/previews/ClimatePreview.vue";
 
 export default {
@@ -23,7 +23,7 @@ export default {
 	},
 	components: {
 		TomPreview,
-		Go4trailPreview,
+		T3VPreview,
 		ClimatePreview
 	}
 };
@@ -34,16 +34,16 @@ export default {
 	background-color: $white
 	color: $red
 	text-align: center
-.proj-wrap
+.item-wrap
 	width: 100%
 	line-height: 0
 	position: relative
-.proj-wrap img
+.item-wrap img
 	width: 100%
-.proj-wrap:hover .text-wrap
+.item-wrap:hover .hover-text-wrap
 	visibility: visible
 	opacity: 1
-.text-wrap
+.hover-text-wrap
 	position: absolute
 	top: 0
 	bottom: 0
@@ -58,20 +58,18 @@ export default {
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
-.proj-title
+.item-title
 	font-size: 1.6rem
-.proj-type
+.item-type
 	padding-bottom: 1em
 	font-size: 1.4rem
-.proj-description
-	padding-bottom: 1em
 
 @media screen and ( min-width: 500px )
-	.proj-title
+	.item-title
 		font-weight: bold
 	.projects-grid
 		display: grid
-		grid-template-columns: repeat(3, calc(70% - 2rem * 2))
+		grid-template-columns: repeat(3, calc(75% - 2rem * 2))
 		grid-template-rows: minmax(300px, 1fr)
 		grid-gap: 2rem
 		overflow-x: scroll
@@ -82,12 +80,14 @@ export default {
 
 	.project-item
 		scroll-snap-align: center
-	.proj-wrap img,
-	.text-wrap
+	.item-wrap img,
+	.hover-text-wrap
 		border-radius: 8px
-	.text-wrap.p1,
-	.text-wrap.p2,
-	.text-wrap.p3,
+	.hover-text-wrap.p1,
+	.hover-text-wrap.p2,
+	.hover-text-wrap.p3,
 		visibility: hidden
 		opacity: 0
+	.bottom-padding-1
+		padding-bottom: 1rem
 </style>

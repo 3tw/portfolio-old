@@ -55,6 +55,9 @@ export default {
   color: $black
   text-decoration: none
 
+#navBar .router-link-active
+  color: $red
+
 .flex-left a
   padding-right: 0.3em
 

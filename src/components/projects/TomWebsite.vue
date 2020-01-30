@@ -1,15 +1,45 @@
 <template>
-	<div class="grid project-content content-1">
-		<h1 class="content-wrap">{{p1Title}}</h1>
-		<div class="content-wrap">
-			<p class="proj-description">{{description1}}</p>
+	<div class="project-content grid">
+		<h1 class="proj-title top-margin-2 column-1-4">{{p1Title}}</h1>
+		<div class="proj-description bottom-padding-1 column-1-4">
+			<p>{{description1}}</p>
 		</div>
-		<div class="image-wrap">
-			<img src="" alt="cover-photo" />
+		<div class="image-wrap bottom-padding-3 column-1-5">
+			<img src="@/assets/images/tom-cover.png" alt="cover-photo" />
 		</div>
-		<br />
-		<br />
-		<div class="content-wrap center bottom-pad">
+		<div class="proj-description bottom-padding-1 column-1-4">
+			<p>{{description2}}</p>
+		</div>
+		<div class="image-wrap bottom-padding-3 column-1-5">
+			<img src="@/assets/images/tom-exh-menu.png" alt="cover-photo" />
+		</div>
+		<div class="proj-description bottom-padding-1 column-1-4">
+			<p>{{description3}}</p>
+		</div>
+		<div class="image-wrap bottom-padding-3 column-1-5">
+			<img src="@/assets/images/tom-exh-main.jpg" alt="cover-photo" />
+		</div>
+		<div class="proj-description bottom-padding-1 column-1-4">
+			<span v-html="description4"></span>
+		</div>
+		<div class="image-wrap bottom-padding-1 column-1-5">
+			<img src="@/assets/images/tom-gallery.jpg" alt="cover-photo" />
+		</div>
+		<div class="proj-description top-padding-2 bottom-padding-1 column-1-4">
+			<p>{{description5}}</p>
+		</div>
+		<div class="image-wrap bottom-padding-1 column-1-2">
+			<img src="@/assets/images/tom-m-gallery.png" alt="cover-photo" />
+		</div>
+		<div class="image-wrap bottom-padding-1 column-2-3">
+			<img src="@/assets/images/tom-m-proj-main.png" alt="cover-photo" />
+		</div>
+		<div class="image-wrap bottom-padding-3 column-3-4">
+			<img src="@/assets/images/tom-m-exh-main.png" alt="cover-photo" />
+		</div>
+		
+
+		<div class="column-center bottom-padding-3">
 			<a
 				href="https://github.com/3tw/TomWebsite"
 				target="_blank"
@@ -18,6 +48,7 @@
 			>View on GitHub</a>
 			<a class="btn">Soon Online</a>
 		</div>
+		<br />
 	</div>
 </template>
 

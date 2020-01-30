@@ -1,6 +1,6 @@
 <template>
 	<div id="about" class="grid">
-		<div class="text-left top-margin-4 bottom-padding-3">
+		<div class="column-1-4 top-margin-4 bottom-padding-3">
 			<span>{{headline}}</span>
 			<br>
 			<span v-html="bio"></span>
@@ -26,12 +26,11 @@ export default {
 
 <style lang="sass" scoped>
 #about
-	//height: calc(100vh - 3.125rem - 4.5rem - 5rem) //- footer - navBar - padding-top-5
 	background: $white
 	color: $black
 	margin: 0 1.5rem 0 1.5rem 
 	text-align: left
-.text-left
+.column-1-4
 	line-height: 2rem
 	font-size: 1.5rem
 @media screen and ( min-width: 700px )

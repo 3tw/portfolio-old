@@ -22,10 +22,5 @@ export default {
 	background-color: $white
 	display: flex
 	flex-direction: column
-	//height: calc(100vh - 3.125rem - 4.5rem)
 	align-items: center
-
-.content-wrap
-	position: relative
-	top: 25%
 </style>

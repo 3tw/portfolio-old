@@ -1,10 +1,10 @@
 <template>
-	<div class="proj-wrap">
+	<div class="item-wrap">
 		<img src="@/assets/images/climate-cover3.png" alt="cover-photo" />
-		<div class="text-wrap p3">
+		<div class="hover-text-wrap p3">
 			<div class="image-text">
-				<span class="proj-title">{{p3Title}}</span>
-				<p class="proj-type">{{p3Type}}</p>
+				<span class="item-title">{{p3Title}}</span>
+				<p class="item-type">{{p3Type}}</p>
 				<router-link to="/projects/climate-prototype" class="btn">More</router-link>
 			</div>
 		</div>
@@ -23,6 +23,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.text-wrap.p3
+.hover-text-wrap.p3
 	background-color: $yellow
 </style>

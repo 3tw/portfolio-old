@@ -1,11 +1,11 @@
 <template>
-	<div class="proj-wrap">
+	<div class="item-wrap">
 		<img src="@/assets/images/t3v-cover.jpg" alt="cover-photo" />
-		<div class="text-wrap p2">
+		<div class="hover-text-wrap p2">
 			<div class="image-text">
-				<span class="proj-title">{{p2Title}}</span>
-				<p class="proj-type">{{p2Type}}</p>
-				<router-link to="/projects/go4trail" class="btn">More</router-link>
+				<span class="item-title">{{p2Title}}</span>
+				<p class="item-type">{{p2Type}}</p>
+				<router-link to="/projects/T3V" class="btn">More</router-link>
 			</div>
 		</div>
 	</div>
@@ -23,6 +23,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.text-wrap.p2
-	background-color: #00d3c8
+.hover-text-wrap.p2
+	background-color: #346aff
 </style>

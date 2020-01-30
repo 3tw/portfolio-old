@@ -1,10 +1,10 @@
 <template>
-	<div class="proj-wrap">
+	<div class="item-wrap">
 		<img src="@/assets/images/tom-exh-menu.png" alt="cover-photo" />
-		<div class="text-wrap p1">
+		<div class="hover-text-wrap p1">
 			<div class="image-text">
-				<span class="proj-title">{{p1Title}}</span>
-				<p class="proj-type">{{p1Type}}</p>
+				<span class="item-title">{{p1Title}}</span>
+				<p class="item-type">{{p1Type}}</p>
 				<router-link to="/projects/tom-website" class="btn">More</router-link>
 			</div>
 		</div>
@@ -23,6 +23,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.text-wrap.p1
+.hover-text-wrap.p1
 	background-color: whitesmoke
 </style>
