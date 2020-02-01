@@ -18,7 +18,7 @@ export default {
 			p2Title: `T3V WEBSITE`,
 			p2Type: `Website design`
 		};
-	}
+	},
 };
 </script>
 

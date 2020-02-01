@@ -20,7 +20,15 @@ export default {
 	name: "app",
 	components: {
 		NavBar,
-		Footer
+		Footer,
+	},
+	created: {
+		preloadImages() {
+			let projectImage = new Image();
+			projectImage.src = "@/assets/images/climate-cover3.png";
+			projectImage.src = "@/assets/images/t3v-cover.jpg";
+			projectImage.src = "@/assets/images/tom-exh-main.jpg";
+		}
 	}
 };
 </script>
@@ -81,7 +89,7 @@ h1
 	transition: 0.15s ease-out
 
 a.btn 
-	color: red
+	color: $red
 
 .top-margin-4
 	margin-top: 4rem
@@ -111,13 +119,18 @@ a.btn
 	line-height: 2rem
 	font-size: 1.5rem
 	color: $black
-.image-wrap
+.image-wrap,
+.image-wrap-mobile
 	width: 100%
 	line-height: 0
 	position: relative
+.image-wrap-mobile
+	text-align: center
 .image-wrap img
 	width: 100%
-
+.image-wrap-mobile img
+	max-width: 100%
+	max-height: 80vh
 
 //media queries
 @media screen and ( min-width: 700px )
@@ -149,5 +162,9 @@ a.btn
 		font-size: 1.6em
 	.project-content
 		margin: 0 3.175rem 0 3.175rem
-	
+	.image-wrap-mobile
+		text-align: none
+	.image-wrap-mobile img
+		max-height: none
+		max-width: none
 </style>

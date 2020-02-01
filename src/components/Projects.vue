@@ -25,7 +25,7 @@ export default {
 		TomPreview,
 		T3VPreview,
 		ClimatePreview
-	}
+	},
 };
 </script>
 

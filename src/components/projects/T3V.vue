@@ -1,6 +1,6 @@
 <template>
 	<div class="project-content grid">
-		<h1 class="proj-title top-margin-2 column-1-4">{{p1Title}}</h1>
+		<h1 class="proj-title top-margin-2 bottom-padding-1 column-1-4">{{p1Title}}</h1>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
@@ -16,13 +16,13 @@
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description4}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-1 column-1-2">
+		<div class="image-wrap-mobile bottom-padding-1 column-1-2">
 			<img src="@/assets/images/t3v-m-races.png" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-1 column-2-3">
+		<div class="image-wrap-mobile bottom-padding-1 column-2-3">
 			<img src="@/assets/images/t3v-m-cover.png" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-1 column-3-4">
+		<div class="image-wrap-mobile bottom-padding-1 column-3-4">
 			<img src="@/assets/images/t3v-m-menu.png" alt="cover-photo" />
 		</div>
 		<div class="proj-description top-padding-2 bottom-padding-1 column-1-4">
@@ -67,6 +67,5 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
 
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="project-content grid">
-		<h1 class="proj-title top-margin-2 column-1-4">{{p1Title}}</h1>
+		<h1 class="proj-title top-margin-2 bottom-padding-1 column-1-4">{{p1Title}}</h1>
 		<div class="proj-description column-1-4">
 			<p>{{description1}}</p>
 		</div>

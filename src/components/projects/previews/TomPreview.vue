@@ -1,6 +1,6 @@
 <template>
 	<div class="item-wrap">
-		<img src="@/assets/images/tom-exh-menu.png" alt="cover-photo" />
+		<img src="@/assets/images/tom-exh-main.jpg" alt="cover-photo" />
 		<div class="hover-text-wrap p1">
 			<div class="image-text">
 				<span class="item-title">{{p1Title}}</span>
@@ -18,7 +18,7 @@ export default {
 			p1Title: `TOM'S WEB PORTFOLIO`,
 			p1Type: `Website design`
 		};
-	}
+	},
 };
 </script>
 

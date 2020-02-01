@@ -1,8 +1,7 @@
 <template>
 	<div id="about" class="grid">
 		<div class="column-1-4 top-margin-4 bottom-padding-3">
-			<span>{{headline}}</span>
-			<br>
+			<span>{{headline}}</span> <br>
 			<span v-html="bio"></span>
 			<br>
 			<br>
@@ -17,8 +16,8 @@ export default {
 	data() {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
-			headline: `I'm a Front End Web Developer from Slovenia`,
-			bio: `In 2019 I graduated with an MA degree in Philosophy at the University of Amsterdam. That's when I came across coding. If I am not in front of the computer screen I am probably climbing, enjoying a long run or taking photos. I would love to hear from you, so don't hesitate to send me an <a class="underline" href="mailto:teo.winkler@gmail.com">email</a>.`,
+			headline: `Hi, my name is Teo.`,
+			bio: `I'm a front end developer with a master's degree in philosophy from the University of Amsterdam. When I am not in front of the computer screen I am excited about climbing, running long distances and taking photos with my favorite compact camera. I am always thrilled to collaborate, so don't hesitate to send me an <a class="underline" href="mailto:teo.winkler@gmail.com">email</a>.`,
 		};
 	}
 };

@@ -2,17 +2,20 @@
 	<header id="navBar">
 		<div class="flex-left">
 			<router-link to="/about" >about</router-link>
-			<router-link to="/projects" >projects</router-link>
+			<router-link to="/projects">projects</router-link>
 		</div>
 		<div class="flex-right">
 			<router-link to="/" class="logo" v-show='hideLogo'>
-				<img :src="smallLogo" />
+					<!--<img class="svg-small-logo" src="@/assets/logo/small-logo.svg" />-->
+          <SmallLogo class="svg-small-logo" />
 			</router-link>
 		</div>
 	</header>
 </template>
 
 <script>
+import SmallLogo from "../SmallLogo.vue"
+
 export default {
   name: "NavBar",
   data() {
@@ -31,6 +34,9 @@ export default {
       }
     },
   },
+  components: {
+      SmallLogo
+    }
 };
 </script>
 

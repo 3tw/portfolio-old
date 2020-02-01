@@ -1,10 +1,13 @@
 <template>
 	<div class="showcase">
-		<img :src="largeLogo" />
+		<!--<img class="svg-logo" src="@/assets/logo/large-logo.svg" />-->
+		<LargeLogo class="svg-logo" />
 	</div>
 </template>
 
 <script>
+import LargeLogo from "./LargeLogo.vue"
+
 export default {
 	name: "Showcase",
 	data() {
@@ -14,6 +17,9 @@ export default {
 		largeLogo() {
 			return require("../assets/logo/logo-red-large.png");
 		}
+	},
+	components: {
+		LargeLogo
 	}
 };
 </script>
@@ -25,6 +31,14 @@ export default {
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  min-width: 250px
 
+.svg-logo
+	min-width: 250px
+	width: 250px
+
+
+@media screen and ( min-width: 700px )
+	.svg-logo
+		min-width: 300px
+		max-width: 350px
 </style>

@@ -18,7 +18,7 @@ export default {
 			p3Title: `CLIMATE AWARENESS`,
 			p3Type: `Prototype`
 		};
-	}
+	},
 };
 </script>
 
