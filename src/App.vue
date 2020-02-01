@@ -91,8 +91,8 @@ h1
 a.btn 
 	color: $red
 
-.top-margin-4
-	margin-top: 4rem
+.top-margin-3
+	margin-top: 3rem
 .top-margin-2
 	margin-top: 2rem
 .top-padding-2
@@ -116,8 +116,8 @@ a.btn
 	line-height: 2rem
 .proj-description p,
 .proj-description span
-	line-height: 2rem
-	font-size: 1.5rem
+	line-height: 1.6rem
+	font-size: 1.2rem
 	color: $black
 .image-wrap,
 .image-wrap-mobile
@@ -164,7 +164,8 @@ a.btn
 		margin: 0 3.175rem 0 3.175rem
 	.image-wrap-mobile
 		text-align: none
-	.image-wrap-mobile img
-		max-height: none
-		max-width: none
+	.proj-description p,
+	.proj-description span
+		line-height: 2rem
+		font-size: 1.5rem
 </style>

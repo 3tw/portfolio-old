@@ -44,11 +44,10 @@ export default {
 #navBar
   display: flex
   height: 4.5rem
-  align-items: flex-end
+  align-items: flex-start
   justify-content: space-between
   background: $white
-  padding-bottom: 0.5rem
-  margin: 0 1.5rem 0 1.5rem 
+  margin: 1rem 1.5rem 0 1.5rem 
 
 #navBar a
   border: none
@@ -80,7 +79,7 @@ export default {
 
 @media screen and ( min-width: 700px )
 	#navBar
-		margin: 0 3.175rem 0 3.175rem
+		margin: 1 3.175rem 0 3.175rem
  .flex-left a
     padding-right: 0.5em
     

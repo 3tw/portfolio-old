@@ -1,5 +1,5 @@
 <template>
-	<div class="projects projects-grid top-margin-4 bottom-padding-1">
+	<div class="projects projects-grid top-margin-3 bottom-padding-1">
 		<div class="project-item">
 			<ClimatePreview />
 		</div>
