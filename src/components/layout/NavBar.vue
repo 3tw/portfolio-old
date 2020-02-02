@@ -1,12 +1,11 @@
 <template>
 	<header id="navBar">
 		<div class="flex-left">
-			<router-link to="/about" >about</router-link>
-			<router-link to="/projects">projects</router-link>
+			<router-link class="router-link" to="/about" >about</router-link>
+			<router-link class="router-link" to="/projects">projects</router-link>
 		</div>
 		<div class="flex-right">
 			<router-link to="/" class="logo" v-show='hideLogo'>
-					<!--<img class="svg-small-logo" src="@/assets/logo/small-logo.svg" />-->
           <SmallLogo class="svg-small-logo" />
 			</router-link>
 		</div>
@@ -23,9 +22,6 @@ export default {
 		};
   },
   computed: {
-    smallLogo () {
-      return require("../../assets/logo/logo-black-small.jpg")
-    },
     hideLogo: function () {
       if (this.$route.name == "home") {
         return false

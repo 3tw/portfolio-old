@@ -31,8 +31,8 @@
 		<div class="proj-description top-padding-2 bottom-padding-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
-			<img src="@/assets/images/t3v-txt.jpg" alt="cover-photo" />
+		<div class="image-wrap bottom-padding-3 column-2-4">
+			<img src="@/assets/images/t3v-m-txt.jpg" alt="cover-photo" />
 		</div>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<span v-html="description5"></span>

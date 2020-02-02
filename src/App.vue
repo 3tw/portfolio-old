@@ -64,7 +64,7 @@ h1
 	flex-direction: column
 
 #nav
-	flex: 0 0 5rem
+	flex: 0 0 5.5rem
 
 #main
 	flex: 1 0 auto
@@ -148,6 +148,8 @@ a.btn
 		grid-column: 1/2
 	.column-2-3
 		grid-column: 2/3
+	.column-2-4
+		grid-column: 2/4
 	.column-3-4
 		grid-column: 3/4
 	.column-3-5

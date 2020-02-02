@@ -1,6 +1,5 @@
 <template>
 	<div class="showcase">
-		<!--<img class="svg-logo" src="@/assets/logo/large-logo.svg" />-->
 		<LargeLogo class="svg-logo" />
 	</div>
 </template>
@@ -12,11 +11,6 @@ export default {
 	name: "Showcase",
 	data() {
 		return {};
-	},
-	computed: {
-		largeLogo() {
-			return require("../assets/logo/logo-red-large.jpg");
-		}
 	},
 	components: {
 		LargeLogo

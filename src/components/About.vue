@@ -17,7 +17,7 @@ export default {
 		return {
 			skills: `[html, css, javascript, vue.js, jquery, sass, python]`,
 			headline: `Hi, my name is Teo.`,
-			bio: `I'm a front end web developer. In august 2019 I handed in my philosophy thesis at the University of Amsterdam. That's when I picked up coding. Soon I started working on my first project and never looked back. When I am not in front of the computer screen I am excited about climbing, running long distances and taking photos with my favorite compact camera. I am always thrilled to collaborate, so don't hesitate to send me an <a class="underline" href="mailto:teo.winkler@gmail.com">email</a>.`,
+			bio: `I'm a front end web developer. In August 2019 I handed in my philosophy thesis at the University of Amsterdam and started looking for new challenges. Eager to learn something entirely new I picked up coding. Soon I started working on my first project and never looked back. When I am not in front of the computer screen I am excited about climbing, running long distances and strolling around with a compact camera. I would love to hear from you, so don't hesitate to <a class="underline" href="mailto:teo.winkler@gmail.com">contact me</a>.`,
 		};
 	}
 };
