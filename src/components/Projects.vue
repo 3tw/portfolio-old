@@ -1,13 +1,14 @@
 <template>
-	<div class="projects projects-grid top-margin-3 bottom-padding-1">
+	<div class="projects-grid top-margin-3 bottom-padding-1">
 		<div class="project-item">
-			<ClimatePreview />
+			<router-link to="/projects/climate-prototype" class="projects"><ClimatePreview /></router-link>
 		</div>
 		<div class="project-item">
-			<T3VPreview />
+			<router-link to="/projects/T3V" class="projects"><T3VPreview /></router-link>
 		</div>
 		<div class="project-item">
-			<TomPreview />
+			<router-link to="/projects/tom-website" class="projects"><TomPreview /></router-link>
+
 		</div>
 	</div>
 </template>
@@ -61,7 +62,6 @@ export default {
 .item-title
 	font-size: 1.6rem
 .item-type
-	padding-bottom: 1em
 	font-size: 1.4rem
 
 ::-webkit-scrollbar-track

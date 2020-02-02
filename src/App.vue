@@ -73,6 +73,7 @@ h1
 #foot
 	flex: 0 0 5rem
 
+//version with buttons
 .btn
 	border-radius: 3px
 	border-width: 2px
@@ -129,8 +130,7 @@ a.btn
 .image-wrap img
 	width: 100%
 .image-wrap-mobile img
-	max-width: 100%
-	max-height: 80vh
+	width: 100%
 
 //media queries
 @media screen and ( min-width: 700px )
@@ -168,4 +168,6 @@ a.btn
 	.proj-description span
 		line-height: 2rem
 		font-size: 1.5rem
+	.image-wrap-mobile img
+		width: 100%
 </style>

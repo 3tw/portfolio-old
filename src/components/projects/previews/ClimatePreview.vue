@@ -5,7 +5,6 @@
 			<div class="image-text">
 				<span class="item-title">{{p3Title}}</span>
 				<p class="item-type">{{p3Type}}</p>
-				<router-link to="/projects/climate-prototype" class="btn">More</router-link>
 			</div>
 		</div>
 	</div>
