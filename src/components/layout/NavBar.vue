@@ -24,7 +24,7 @@ export default {
   },
   computed: {
     smallLogo () {
-      return require("../../assets/logo/logo-black-small.png")
+      return require("../../assets/logo/logo-black-small.jpg")
     },
     hideLogo: function () {
       if (this.$route.name == "home") {

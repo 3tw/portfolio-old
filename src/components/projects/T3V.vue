@@ -11,34 +11,34 @@
 			<p>{{description2}}</p>
 		</div>
 		<div class="image-wrap bottom-padding-3 column-1-5">
-			<img src="@/assets/images/t3v-races.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-races.jpg" alt="cover-photo" />
 		</div>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description4}}</p>
 		</div>
 		<div class="image-wrap-mobile bottom-padding-1 column-1-2">
-			<img src="@/assets/images/t3v-m-races.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-races.jpg" alt="cover-photo" />
 		</div>
 		<div class="image-wrap-mobile bottom-padding-1 column-2-3">
-			<img src="@/assets/images/t3v-m-cover-sl.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-cover-sl.jpg" alt="cover-photo" />
 		</div>
 		<div class="image-wrap-mobile bottom-padding-1 column-3-4">
-			<img src="@/assets/images/t3v-m-menu.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-menu.jpg" alt="cover-photo" />
 		</div>
 		<div class="image-wrap-mobile bottom-padding-1 column-4-5">
-			<img src="@/assets/images/t3v-m-cover.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-cover.jpg" alt="cover-photo" />
 		</div>
 		<div class="proj-description top-padding-2 bottom-padding-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
 		<div class="image-wrap bottom-padding-3 column-1-5">
-			<img src="@/assets/images/t3v-txt.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-txt.jpg" alt="cover-photo" />
 		</div>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<span v-html="description5"></span>
 		</div>
 		<div class="image-wrap bottom-padding-3 column-1-5">
-			<img src="@/assets/images/t3v-contact.png" alt="cover-photo" />
+			<img src="@/assets/images/t3v-contact.jpg" alt="cover-photo" />
 		</div>
 
 		<div class="column-center bottom-padding-3">

@@ -25,7 +25,7 @@ export default {
 	created: {
 		preloadImages() {
 			let projectImage = new Image();
-			projectImage.src = "@/assets/images/climate-cover3.png";
+			projectImage.src = "@/assets/images/climate-cover3.jpg";
 			projectImage.src = "@/assets/images/t3v-cover.jpg";
 			projectImage.src = "@/assets/images/tom-exh-main.jpg";
 		}

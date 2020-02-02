@@ -11,10 +11,10 @@
 			<img src="@/assets/images/climate-cover.jpg" alt="cover-photo" />
 		</div>
 		<div class="image-wrap bottom-padding-1 column-1-5">
-			<img src="@/assets/images/climate-cover2.png" alt="cover-photo" />
+			<img src="@/assets/images/climate-cover2.jpg" alt="cover-photo" />
 		</div>
 		<div class="image-wrap bottom-padding-3 column-1-5">
-			<img src="@/assets/images/climate-cover3.png" alt="cover-photo" />
+			<img src="@/assets/images/climate-cover3.jpg" alt="cover-photo" />
 		</div>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description3}}</p>

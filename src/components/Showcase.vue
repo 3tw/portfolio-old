@@ -15,7 +15,7 @@ export default {
 	},
 	computed: {
 		largeLogo() {
-			return require("../assets/logo/logo-red-large.png");
+			return require("../assets/logo/logo-red-large.jpg");
 		}
 	},
 	components: {
