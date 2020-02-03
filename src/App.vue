@@ -25,10 +25,10 @@ export default {
 	created () {
 		let preload = new Array();
 
-		preload[0] = "../assets/images/climate-cover3.jpg";
-		preload[1] = "../assets/images/t3v-preview.jpg";
-		preload[2] = "../assets/images/tom-preview.jpg";
-
+		preload[0] = "../img/climate-cover3.8db79473.jpg";
+		preload[1] = "../img/t3v-preview.a95dd79d.jpg";
+		preload[2] = "../assets/images/tom-preview.7ee60f2d.jpg"
+		
 		let loadedimages = new Array();
 		for(let i=0; i<preload.length; i++) {
 		loadedimages[i] = new Image();
