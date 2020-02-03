@@ -22,16 +22,23 @@ export default {
 		NavBar,
 		Footer,
 	},
-	created: {
-		preloadImages() {
-			let projectImage = new Image();
-			projectImage.src = "@/assets/images/climate-cover3.jpg";
-			projectImage.src = "@/assets/images/t3v-cover.jpg";
-			projectImage.src = "@/assets/images/tom-exh-main.jpg";
+	created () {
+		let preload = new Array();
+
+		preload[0] = "../assets/images/climate-cover3.jpg";
+		preload[1] = "../assets/images/t3v-preview.jpg";
+		preload[2] = "../assets/images/tom-preview.jpg";
+
+		let loadedimages = new Array();
+		for(let i=0; i<preload.length; i++) {
+		loadedimages[i] = new Image();
+		loadedimages[i].src = preload[i];
 		}
+		
 	}
 };
 </script>
+
 
 <style lang="sass">
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');

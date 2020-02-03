@@ -27,8 +27,8 @@ export default {
   transform: translate(-50%, -50%)
 
 .svg-logo
-	min-width: 250px
-	width: 250px
+	min-width: 230px
+	width: 230px
 
 
 @media screen and ( min-width: 700px )

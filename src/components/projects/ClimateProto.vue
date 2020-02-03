@@ -23,7 +23,7 @@
 			<img src="@/assets/images/climate-transition.gif" alt="cover-photo" />
 		</div>
 		
-		<div class="column-center bottom-padding-3">
+		<div class="column-center top-padding-3">
 			<a
 				href="https://github.com/3tw/ClimatePrototype"
 				target="_blank"

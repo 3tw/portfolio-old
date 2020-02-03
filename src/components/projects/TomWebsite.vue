@@ -43,7 +43,7 @@
 		
 		
 
-		<div class="column-center bottom-padding-3">
+		<div class="column-center top-padding-3">
 			<a
 				href="https://github.com/3tw/TomWebsite"
 				target="_blank"
