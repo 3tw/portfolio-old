@@ -27,7 +27,7 @@ export default {
 
 		preload[0] = "../img/climate-cover3.8db79473.jpg";
 		preload[1] = "../img/t3v-preview.a95dd79d.jpg";
-		preload[2] = "../assets/images/tom-preview.7ee60f2d.jpg"
+		preload[2] = "../img/tom-preview.7ee60f2d.jpg"
 		
 		let loadedimages = new Array();
 		for(let i=0; i<preload.length; i++) {
