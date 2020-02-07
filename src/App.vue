@@ -42,7 +42,8 @@ export default {
 
 <style lang="sass">
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-//general
+
+// core css
 *
 	box-sizing: border-box
 	margin: 0

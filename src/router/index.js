@@ -21,22 +21,22 @@ const routes = [
   {
     path: '/projects',
     name: 'projects',
-    component: () => import('../components/Projects.vue'),
+    component: () => import(/* webpackChunkName: "projects" */  '../components/Projects.vue'),
   },
   {
     path: '/projects/tom-website',
     name: 'TomWebsite',
-    component: () => import('../components/projects/TomWebsite.vue')
+    component: () => import(/* webpackChunkName: "TomWebsite" */ '../components/projects/TomWebsite.vue')
   },
   {
     path: '/projects/t3v',
     name: 'T3V',
-    component: () => import('../components/projects/T3V.vue')
+    component: () => import(/* webpackChunkName: "T3V" */ '../components/projects/T3V.vue')
   },
   {
     path: '/projects/climate-prototype',
     name: 'ClimatePrototype',
-    component: () => import('../components/projects/ClimateProto.vue')
+    component: () => import(/* webpackChunkName: "ClimatePrototype" */ '../components/projects/ClimateProto.vue')
   }
 ]
 
