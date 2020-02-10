@@ -1,6 +1,6 @@
 <template>
 	<div class="item-wrap">
-		<img src="@/assets/images/t3v-preview.jpg" alt="T3V preview photo" />
+		<img src="@/assets/images/t3v-cover.jpg" alt="T3V preview photo" />
 		<div class="hover-text-wrap p2">
 			<div class="image-text">
 				<span class="item-title">{{p2Title}}</span>
