@@ -26,7 +26,7 @@ export default {
 		let preload = new Array();
 
 		preload[0] = "../img/climate-cover3.8db79473.jpg";
-		preload[1] = "../img/t3v-cover.a95dd79d.jpg";
+		preload[1] = "../img/t3v-cover.7312c765.jpg";
 		preload[2] = "../img/tom-preview.7ee60f2d.jpg"
 		
 		let loadedimages = new Array();

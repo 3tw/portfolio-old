@@ -39,7 +39,7 @@ export default {
 	data() {
 		return {
 			p1Title: `Climate Awareness Prototype`,
-			description1: `This prototype was created as a part of my application for the people.ooo workshop. The challenge was to come up with an idea that would effectively communicate the effects of climate change.  I approached the task by transgressing the "User First" paradigm. This project shows that the disruptive nature of climate change shouldn't be simply presented as a consumable content.`,
+			description1: `I came up with the concept for the prototype when I was applying for people.ooo workshop. The challenge was to come up with an idea that would effectively communicate the effects of climate change.  I approached the task by transgressing the "User First" paradigm. This project shows that the disruptive nature of climate change shouldn't be simply presented as a consumable content.`,
 			description2: `A wall of text covers the webpage. In contrast to the title the text appears tiny. We are discouraged from reading it. But even if the user decides to read through it, he cannot finish. The text slowly fades away and two short sentences appear. One after another.`,
 			description3: `The message is mediated through the disorder. Yet, the disorder is the message itsef. The user is interrupted and for a brief moment reminded that he cannot hide from disastrous reality. Climate change suddenly affects not only the planet but our online experience.`
 		};

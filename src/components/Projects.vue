@@ -1,5 +1,5 @@
 <template>
-	<div class="projects-grid top-margin-3 bottom-padding-1">
+	<div class="projects-grid bottom-padding-1">
 		<div class="project-item">
 			<router-link to="/projects/climate-prototype" class="projects"><ClimatePreview /></router-link>
 		</div>
@@ -78,8 +78,7 @@ export default {
 		overflow-x: scroll
 		overflow-y: hidden
 		scroll-snap-type: x proximity
-		margin-left: 3.175rem
-		margin-right: 3.175rem
+		margin: 3rem 3.175rem 0 3.175rem
 	.projects-grid:hover
 		overflow-x: auto
 
