@@ -1,9 +1,9 @@
 <template>
 	<footer id="footer">
 		<div class="link-container">
-			<span v-html="email"></span>
-			<span v-html="github"></span>
-			<span v-html="linkedin"></span>
+			<span class="external-link" v-html="email"></span>
+			<span class="external-link" v-html="github"></span>
+			<span class="external-link" v-html="linkedin"></span>
 		</div>
 	</footer>
 </template>
@@ -33,8 +33,10 @@ export default {
     text-align: right
     font-size: 1.5rem
 
-.link-container span
-    padding-left: 1.5rem
+.external-link
+	font-weight: 200
+	padding-left: 1.5rem
+
 
 @media screen and ( min-width: 700px )
 	#footer

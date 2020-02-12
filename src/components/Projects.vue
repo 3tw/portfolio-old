@@ -61,6 +61,7 @@ export default {
 	transform: translate(-50%, -50%)
 .item-title
 	font-size: 1.6rem
+	font-family: "CABNDWebBold", sans-serif
 .item-type
 	font-size: 1.4rem
 
@@ -78,7 +79,7 @@ export default {
 		overflow-x: scroll
 		overflow-y: hidden
 		scroll-snap-type: x proximity
-		margin: 3rem 3.175rem 0 3.175rem
+		margin: 2rem 3.175rem 0 3.175rem
 	.projects-grid:hover
 		overflow-x: auto
 

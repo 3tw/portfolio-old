@@ -1,38 +1,60 @@
 <template>
 	<div class="showcase">
-		<LargeLogo class="svg-logo" />
+		<span class="heading" v-html="heading"></span>
 	</div>
 </template>
 
 <script>
-import LargeLogo from "./LargeLogo.vue"
-
 export default {
-	name: "Showcase",
+	name: "Showcase",	
 	data() {
-		return {};
+		return {
+			windowWidth: window.innerWidth
+		};
 	},
-	components: {
-		LargeLogo
+	mounted() {
+		window.addEventListener(
+			"resize",
+			() => (this.windowWidth = window.innerWidth)
+		);
+	},
+	computed: {
+		heading() {
+			if (this.windowWidth < 700) {
+				return `<h1>Teo Winkler <br> front end developer based in Slovenia <h1>`;
+			} else {
+				return `<h1>Teo Winkler <br> front end developer <br>based in Slovenia <h1>`;
+			}
+		}
 	}
 };
 </script>
 
 <style lang="sass" scoped>
 .showcase
-  text-align: center
-  position: fixed
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+	text-align: left
+	position: fixed
+	top: 50%
+	transform: translate(-50%, -50%)
+	width: 100%
+	padding: 0 1.5rem 0 1.5rem
 
-.svg-logo
-	min-width: 230px
-	width: 230px
-
+.heading
+	text-transform: uppercase
+	font-size: 1.4rem
+	font-family: 'CABNDWebBold', sans-serif
+	line-height: 2.5rem
+	color: $red
 
 @media screen and ( min-width: 700px )
-	.svg-logo
-		min-width: 300px
-		max-width: 350px
+	.showcase
+		padding: 0 3.175rem 0 3.175rem
+	.heading
+		font-size: 1.5rem
+		line-height: 2.6rem
+@media screen and ( min-width: 800px )
+	.heading
+		font-size: 1.7rem
+		line-height: 2.8rem
+
 </style>

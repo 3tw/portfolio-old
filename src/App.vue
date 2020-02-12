@@ -41,7 +41,11 @@ export default {
 
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300&display=swap');
+
+@font-face
+	font-family: "CABNDWebBold"
+	src: url("./assets/fonts/CABNDWebBold.otf") format("otf")
 
 // core css
 *
@@ -62,7 +66,7 @@ a
 	color: $black
 	text-decoration: none
 
-h1
+h2
 	font-family: Muli, sans-serif
 	font-size: 1.875rem
 
@@ -127,6 +131,7 @@ a.btn
 .proj-description span
 	line-height: 1.6rem
 	font-size: 1.2rem
+	font-weight: 300
 	color: $black
 .image-wrap,
 .image-wrap-mobile
