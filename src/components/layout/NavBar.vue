@@ -43,7 +43,7 @@ export default {
 
 .logo
   font-size: 1.5rem
-  font-weight: 300
+  font-weight: 200
   text-transform: uppercase
   font-family: 'Muli', sans-serif
 

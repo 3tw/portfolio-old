@@ -1,6 +1,6 @@
 <template>
 	<div class="project-content grid">
-		<h1 class="proj-title top-margin-2 bottom-padding-1 column-1-4">{{p1Title}}</h1>
+		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
@@ -63,9 +63,9 @@ export default {
 			p1Title: `Tom's Web Portfolio`,
 			description1: `First of all, Tom is a sculptor. He is also my brother. What he asked for is a portfolio with a lot of white space that is gradualy filled up with content as you navigate through. The design had to be minimalistic with a paper-like feel to it.`,
 			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,
-			description3: `The asymmetric grid design allows just enough space for the text while retaining a strong visual presence of the gallery. The middle column is fixed and has an individual scrollbar, whereas the gallery items respond to resized window by changing size and distribution.`,
-			description4: `While this website runs on vanilla JS, the gallery utilises <a href="https://fancyapps.com/fancybox/3/" target="_blank" rel="noopener noreferrer">Fancybox</a>, JavaScript lightbox library. It was easy to implement once the website was finished, without sacrificing the aesthetics.`,
-			description5: `On mobile screen columns become rows, while the gallery preserves its shape. The navigation buttons are moved to the top of the screen. We wanted to keep them as an integral part of the layout.`
+			description3: `The asymmetric grid layout allows just enough space for the text while retaining a large gallery. The middle column is fixed and has an individual scrollbar, whereas the gallery items respond to resized window by changing size and distribution.`,
+			description4: `While this website runs on vanilla JavaScript, the gallery utilises <a href="https://fancyapps.com/fancybox/3/" target="_blank" rel="noopener noreferrer" class="underline">Fancybox</a>, JavaScript lightbox library. It was easy to implement once the website was finished, without sacrificing the aesthetics. And what is even better, it is mobile friendly!`,
+			description5: `On smaller screens columns become rows, while the gallery preserves its shape. The navigation buttons are moved to the top of the screen. We wanted to keep them as an integral part of the layout.`
 		};
 	},
 };

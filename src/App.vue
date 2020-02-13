@@ -176,7 +176,7 @@ a.btn
 	.item-title
 		font-size: 1.6em
 	.project-content
-		margin: 0 3.175rem 0 3.175rem
+		margin: 2rem 3.175rem 0 3.175rem
 	.image-wrap-mobile
 		text-align: none
 	.proj-description p,
