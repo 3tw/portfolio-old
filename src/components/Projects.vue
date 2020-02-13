@@ -96,4 +96,8 @@ export default {
 		opacity: 0
 	.bottom-padding-1
 		padding-bottom: 1rem
+	
+@media screen and ( min-width: 1200px )
+	.projects-grid
+		margin: 2rem 6rem 0 6rem
 </style>

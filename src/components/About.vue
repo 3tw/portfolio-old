@@ -36,4 +36,8 @@ export default {
 	.column-1-4
 		line-height: 2rem
 		font-size: 1.5rem
+
+@media screen and ( min-width: 1200px )
+	#about
+		margin: 2rem 6rem 0 6rem
 </style>

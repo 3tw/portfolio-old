@@ -57,4 +57,8 @@ export default {
 		font-size: 1.7rem
 		line-height: 2.8rem
 
+@media screen and ( min-width: 1200px )
+	.showcase
+		margin: 2rem 6rem 0 6rem		
+
 </style>
