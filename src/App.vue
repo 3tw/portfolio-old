@@ -185,4 +185,8 @@ a.btn
 		font-size: 1.5rem
 	.image-wrap-mobile img
 		width: 100%
+
+@media screen and ( min-width: 1200px )
+	.project-content
+		margin: 2rem 6rem 0 6rem
 </style>
