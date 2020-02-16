@@ -45,7 +45,11 @@
 				rel="noopener noreferrer"
 				class="btn"
 			>View on GitHub</a>
-			<a class="btn">Soon Online</a>
+			<a href="https://tektrehvrhov.si"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn"
+			>View Online</a>
 		</div>
 		<br />
 	</div>
