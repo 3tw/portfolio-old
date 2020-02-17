@@ -4,8 +4,8 @@
 			<router-link to="/" class="logo">tw</router-link>
 		</div>
 		<div class="flex-right">
-			<router-link class="router-link" to="/about">About</router-link>
-			<router-link class="router-link" to="/projects">Projects</router-link>
+			<router-link class="router-link" id="about" to="/about">About</router-link>
+			<router-link class="router-link" id="projects" to="/projects">Projects</router-link>
 		</div>
 	</header>
 </template>
@@ -51,6 +51,10 @@ export default {
 .router-link
 
 #navBar .router-link-exact-active
+  color: $red
+
+#navBar .router-link-active#about,
+#navBar .router-link-active#projects,
   color: $red
 
 .flex-right a
