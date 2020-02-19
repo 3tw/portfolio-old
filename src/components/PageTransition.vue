@@ -2,9 +2,6 @@
 	<transition 
         :name="transitionType"
         :mode="transitionMode"
-        v-bind="$attrs"
-        v-on="hooks"
-        
     >
 		<slot></slot>
 	</transition>
@@ -19,7 +16,7 @@ export default {
 	data() {
 		return {
             transitionType: DEFAULT_TRANSITION_TYPE,
-            transitionMode: DEFAULT_TRANSITION_MODE,
+            transitionMode: DEFAULT_TRANSITION_MODE
 		};
 	},
 	created() {
@@ -47,14 +44,6 @@ export default {
 
 <style lang="sass" scoped>
 
-.fade-enter-active, 
-.fade-leave-active
-  transition: opacity 0.5s cubic-bezier(0.42,0,0.60,1)
-
-.fade-enter, 
-.fade-leave-to
-  opacity: 0
-
 .slide-left-enter-active,
 .slide-left-leave-active,
 .slide-right-enter-active,
@@ -72,6 +61,16 @@ export default {
 .slide-right-enter
     opacity: 0
     transform: translate(-2.5em, 0)
+
+.fade-enter-active, 
+.fade-leave-active
+  transition-duration: 0.4s
+  transition-property: opacity
+  transition-timing-function: cubic-bezier(0.42,0,0.60,1)
+
+.fade-enter, 
+.fade-leave-to
+  opacity: 0
 </style>
 
 <!-- 

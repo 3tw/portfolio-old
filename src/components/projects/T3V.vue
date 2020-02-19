@@ -1,6 +1,9 @@
 <template>
 	<div class="project-content grid">
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
+
+		<LanguageChart class="column-1-4"/>
+
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
@@ -56,7 +59,13 @@
 </template>
 
 <script>
+import LanguageChart from "../layout/LanguageChart.vue";
+
 export default {
+	name: "T3V",
+	components: {
+		LanguageChart,
+	},
 	data() {
 		return {
 			p1Title: `Tek treh vrhov`,

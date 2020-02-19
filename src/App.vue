@@ -17,7 +17,7 @@
 <script>
 import NavBar from "./components/layout/NavBar.vue";
 import Footer from "./components/layout/Footer.vue";
-import PageTransition from "./components/PageTransition.vue"
+import PageTransition from "./components/PageTransition.vue";
 
 export default {
 	name: "app",
@@ -89,7 +89,6 @@ h2
 #foot
 	flex: 0 0 6rem
 
-//version with buttons
 .btn
 	border-radius: 3px
 	border-width: 2px
