@@ -115,10 +115,12 @@ a.btn
 	padding-top: 2rem
 .top-padding-3
 	padding-top: 3rem
-.bottom-padding-3
-	padding-bottom: 3rem
 .bottom-padding-1
 	padding-bottom: 1rem
+.bottom-padding-2
+	padding-bottom: 2rem
+.bottom-padding-3
+	padding-bottom: 3rem
 .column-center
 	text-align: center
 .underline

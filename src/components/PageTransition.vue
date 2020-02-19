@@ -1,7 +1,11 @@
 <template>
 	<transition 
         :name="transitionType"
-        :mode="transitionMode">
+        :mode="transitionMode"
+        v-bind="$attrs"
+        v-on="hooks"
+        
+    >
 		<slot></slot>
 	</transition>
 </template>
@@ -15,7 +19,7 @@ export default {
 	data() {
 		return {
             transitionType: DEFAULT_TRANSITION_TYPE,
-            transitionMode: DEFAULT_TRANSITION_MODE
+            transitionMode: DEFAULT_TRANSITION_MODE,
 		};
 	},
 	created() {
@@ -25,10 +29,10 @@ export default {
 				to.meta.transitionType || from.meta.transitionType;
 
 			if (transitionType === "slide") {
-				// detect direction of route chane
-				const down = to.path.split("/").length;
-				const up = from.path.split("/").length;
-				transitionType = down < up ? "slide-right" : "slide-left";
+				// detect direction of route change based on path length
+				const toDepth = to.path.split("/").length;
+                const fromDepth = from.path.split("/").length;
+				transitionType = toDepth < fromDepth ? "slide-right" : "slide-left";
 
                 this.transitionType = transitionType || DEFAULT_TRANSITION_TYPE;
 
@@ -43,6 +47,14 @@ export default {
 
 <style lang="sass" scoped>
 
+.fade-enter-active, 
+.fade-leave-active
+  transition: opacity 0.5s cubic-bezier(0.42,0,0.60,1)
+
+.fade-enter, 
+.fade-leave-to
+  opacity: 0
+
 .slide-left-enter-active,
 .slide-left-leave-active,
 .slide-right-enter-active,
@@ -54,21 +66,16 @@ export default {
 .slide-left-enter,
 .slide-right-leave-active
     opacity: 0
-    transform: translate(2em, 0) //slide before dissapearing
+    transform: translate(2.5em, 0) //slide before dissapearing
 
 .slide-left-leave-active,
 .slide-right-enter
     opacity: 0
-    transform: translate(-2em, 0)
-
-
-.fade-enter-active, 
-.fade-leave-active
-  transition-duration: 0.5s
-  transition-property: opacity
-  transition-timing-function: cubic-bezier(0.42,0,0.60,1)
-
-.fade-enter, 
-.fade-leave-to
-  opacity: 0
+    transform: translate(-2.5em, 0)
 </style>
+
+<!-- 
+based on 
+markus.oberlehner.net/blog/vue-router-page-transitions/ &
+router.vuejs.org/guide/advanced/transitions.html#per-route-transition
+-->

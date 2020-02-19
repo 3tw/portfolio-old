@@ -23,7 +23,7 @@ export default {
 
 <style lang="sass" scoped >
 #footer
-	margin: 0 1.5rem 0 1.5rem 
+	margin: 1rem 1.5rem 0 1.5rem 
 	height: 5rem
 	display: flex
 	align-items: center
@@ -40,5 +40,5 @@ export default {
 
 @media screen and ( min-width: 700px )
 	#footer
-		margin: 0 3.175rem 0 3.175rem
+		margin: 1rem 3.175rem 0 3.175rem
 </style>
