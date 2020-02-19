@@ -4,7 +4,9 @@
 			<NavBar />
 		</div>
 		<div id="main">
-			<router-view />
+			<page-transition >
+				<router-view />
+			</page-transition>
 		</div>
 		<div id="foot">
 			<Footer />
@@ -15,26 +17,27 @@
 <script>
 import NavBar from "./components/layout/NavBar.vue";
 import Footer from "./components/layout/Footer.vue";
+import PageTransition from "./components/PageTransition.vue"
 
 export default {
 	name: "app",
 	components: {
 		NavBar,
 		Footer,
+		PageTransition
 	},
-	created () {
+	created() {
 		let preload = new Array();
 
 		preload[0] = "../img/climate-cover3.8db79473.jpg";
 		preload[1] = "../img/t3v-cover.7312c765.jpg";
-		preload[2] = "../img/tom-preview.7ee60f2d.jpg"
-		
+		preload[2] = "../img/tom-preview.7ee60f2d.jpg";
+
 		let loadedimages = new Array();
-		for(let i=0; i<preload.length; i++) {
-		loadedimages[i] = new Image();
-		loadedimages[i].src = preload[i];
+		for (let i = 0; i < preload.length; i++) {
+			loadedimages[i] = new Image();
+			loadedimages[i].src = preload[i];
 		}
-		
 	}
 };
 </script>

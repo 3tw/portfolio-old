@@ -1,8 +1,6 @@
 <template>
 	<div id="home">
-		<div>
-			<Showcase />
-		</div>
+		<Showcase />
 	</div>
 </template>
 
@@ -13,14 +11,12 @@ export default {
 	name: "home",
 	components: {
 		Showcase
-	},
+	}
 };
 </script>
 
 <style lang="sass">
 #home
 	background-color: $white
-	display: flex
-	flex-direction: column
-	align-items: center
+	height: 100%
 </style>

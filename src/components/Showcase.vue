@@ -1,12 +1,12 @@
 <template>
-	<div class="showcase">
+	<div id="showcase">
 		<span class="heading" v-html="heading"></span>
 	</div>
 </template>
 
 <script>
 export default {
-	name: "Showcase",	
+	name: "Showcase",
 	data() {
 		return {
 			windowWidth: window.innerWidth
@@ -31,13 +31,12 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.showcase
+#showcase
+	display: flex
 	text-align: left
-	position: fixed
-	top: 50%
-	transform: translate(-50%, -50%)
-	width: 100%
-	padding: 0 1.5rem 0 1.5rem
+	align-self: center
+	height: 100%
+	margin: 0 1.5rem 0 1.5rem
 
 .heading
 	text-transform: uppercase
@@ -45,20 +44,21 @@ export default {
 	font-family: 'CABNDWebBold', sans-serif
 	line-height: 2.5rem
 	color: $red
+	align-self: center
 
 @media screen and ( min-width: 700px )
-	.showcase
-		padding: 0 3.175rem 0 3.175rem
+	#showcase
+		margin: 0 3.175rem 0 3.175rem
 	.heading
 		font-size: 1.5rem
-		line-height: 2.6rem
+		line-height: 2.7rem
 @media screen and ( min-width: 800px )
 	.heading
 		font-size: 1.7rem
-		line-height: 2.8rem
+		line-height: 3rem
 
 @media screen and ( min-width: 1200px )
-	.showcase
-		margin: 2rem 6rem 0 6rem		
+	#showcase
+		margin: 0 6rem 0 6rem		
 
 </style>

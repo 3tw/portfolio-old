@@ -40,15 +40,11 @@ export default {
   font-weight: 200
   font-family: 'Muli', sans-serif
 
-
 .logo
   font-size: 1.5rem
   font-weight: 200
   text-transform: uppercase
   font-family: 'Muli', sans-serif
-
-
-.router-link
 
 #navBar .router-link-exact-active
   color: $red
