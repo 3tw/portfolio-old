@@ -65,6 +65,7 @@ body
 	line-height: 1.4em
 	min-width: 320px
 	height: 100vh
+	overflow-x: hidden
 a
 	color: $black
 	text-decoration: none
@@ -79,14 +80,14 @@ h2
 	flex-direction: column
 
 #nav
-	flex: 0 0 5.5rem
+	flex: 0 0 6rem
 
 #main
 	flex: 1 0 auto
 	overflow-x: hidden
 
 #foot
-	flex: 0 0 5rem
+	flex: 0 0 6rem
 
 //version with buttons
 .btn

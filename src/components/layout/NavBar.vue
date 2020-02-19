@@ -68,7 +68,7 @@ export default {
 
 @media screen and ( min-width: 700px )
 	#navBar
-    margin: 1 3.175rem 0 3.175rem
+    margin: 1.5rem 3.175rem 0 3.175rem
  .flex-left a
     padding-right: 0.5em
     
