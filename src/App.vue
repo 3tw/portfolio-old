@@ -84,7 +84,6 @@ h2
 
 #main
 	flex: 1 0 calc(100vh - 12rem)
-	overflow-x: hidden
 
 #foot
 	flex: 0 0 6rem

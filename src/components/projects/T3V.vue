@@ -1,9 +1,7 @@
 <template>
 	<div class="project-content grid">
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
-
-		<LanguageChart v-bind:repoUrl='"https://api.github.com/repos/3tw/T3V/languages"' class="column-1-4"/>
-
+		<!--<LanguageChart v-bind:repoUrl='"https://api.github.com/repos/3tw/T3V/languages"' class="column-1-4"/>-->
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
