@@ -1,9 +1,10 @@
 <template>
 	<div class="language-chart">
 		<div class="language-bar">
-			<span v-bind:style="vueBar">vue</span>
+			<span v-bind:style="jsBar">js</span>
 			<span v-bind:style="htmlBar">html</span>
 			<span v-bind:style="cssBar">css</span>
+			<span v-bind:style="shellBar">shell</span>
 		</div>
 		<div class="language-keys"></div>
 	</div>
@@ -14,53 +15,73 @@ export default {
 	name: "LanguageChart",
 	data() {
 		return {
-			vueBar: {
+			jsBar: {
 				color: "green",
 				backgroundColor: "green",
 				lineHeight: "10px",
-				fontSize: "10px"
+				fontSize: "10p",
+				width: ""
 			},
 			htmlBar: {
 				color: "yellow",
 				backgroundColor: "yellow",
 				lineHeight: "10px",
-				fontSize: "10px"
+				fontSize: "10px",
+				width: ""
 			},
 			cssBar: {
 				color: "pink",
 				backgroundColor: "pink",
 				lineHeight: "10px",
-				fontSize: "10px"
-			}
+				fontSize: "10px",
+				width: ""
+			},
+			shellBar: {
+				color: "gray",
+				backgroundColor: "gray",
+				lineHeight: "10px",
+				fontSize: "10px",
+				width: ""
+			},
+			languages: null,
+			sum: ""
 		};
 	},
-	mounted() {
-		const axios = require("axios");
-		const t3vLanguages = "https://api.github.com/repos/3tw/T3V/languages";
-		const climateLanguages = "https://api.github.com/repos/3tw/ClimatePrototype/languages";
-		const TomLanguages = "https://api.github.com/repos/3tw/TomWebsite/languages";
-
-		const requestOne = axios.get(t3vLanguages);
-		const requestTwo = axios.get(climateLanguages);
-		const requestThree = axios.get(TomLanguages);
-
+	mounted () {
+		const axios = require("axios")
 		axios
-			.all([requestOne, requestTwo, requestThree])
-			.then(
-				axios.spread((...responses) => {
-					const responseOne = responses[0];
-					const responseTwo = responses[1];
-					const responesThree = responses[2];
-
-					console.log(responseOne.data, responseTwo.data, responesThree.data);
-				})
-			)
+			.get("https://api.github.com/repos/3tw/T3V/languages")
+			// use arrow functions - they don't have their own "this"
+			.then(response => {
+				this.languages = response.data;
+				this.updateLanguages()
+			})
 			.catch(error => {
 				console.log(error);
 			})
 			.then(() => {});
+	},	
+	methods: {
+		updateLanguages: function () {
+			let html = this.languages.HTML;
+			let css = this.languages.CSS;
+			let js = this.languages.JavaScript;
+			let shell = this.languages.Shell;
+			let sum = html + css + js + shell;
+
+			let htmlWidth = (100 * html) / sum;
+			let cssWidth = (100 * css) / sum;
+			let jsWidth = (100 * js) / sum;
+			let shellWidth = (100 * shell) /sum;
+			console.log(htmlWidth)
+			console.log(sum)
+
+			this.$set(this.htmlBar, "width", htmlWidth + "%");
+			this.$set(this.cssBar, "width", cssWidth + "%");
+			this.$set(this.jsBar, "width", jsWidth + "%");
+			this.$set(this.shellBar, "width", shellWidth + "%");
+		}
 	},
-	created() {}
 };
 </script>
 
