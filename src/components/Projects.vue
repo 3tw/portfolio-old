@@ -1,14 +1,13 @@
 <template>
 	<div class="projects-grid bottom-padding-1">
 		<div class="project-item">
-			<router-link to="/projects/climate-prototype" class="projects"><ClimatePreview /></router-link>
-		</div>
-		<div class="project-item">
 			<router-link to="/projects/T3V" class="projects"><T3VPreview /></router-link>
 		</div>
 		<div class="project-item">
 			<router-link to="/projects/tom-website" class="projects"><TomPreview /></router-link>
-
+		</div>
+		<div class="project-item">
+			<router-link to="/projects/climate-prototype" class="projects"><ClimatePreview /></router-link>
 		</div>
 	</div>
 </template>

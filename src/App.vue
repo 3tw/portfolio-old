@@ -83,7 +83,7 @@ h2
 	flex: 0 0 6rem
 
 #main
-	flex: 1 0 auto
+	flex: 1 0 calc(100vh - 12rem)
 	overflow-x: hidden
 
 #foot
