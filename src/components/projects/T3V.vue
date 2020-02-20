@@ -57,12 +57,12 @@
 </template>
 
 <script>
-import LanguageChart from "../layout/LanguageChart.vue";
+//import LanguageChart from "../layout/LanguageChart.vue";
 
 export default {
 	name: "T3V",
 	components: {
-		LanguageChart,
+		//LanguageChart,
 	},
 	data() {
 		return {
