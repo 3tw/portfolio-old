@@ -1,6 +1,11 @@
 <template>
 	<div class="project-content grid">
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
+		<LanguageChart 
+			v-bind:repoUrl="repoUrl"
+			v-bind:used-languages="usedLanguages"
+			class="column-1-4"/>
+			
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
@@ -57,9 +62,22 @@
 </template>
 
 <script>
+import LanguageChart from "../layout/LanguageChart.vue";
+
 export default {
+	name: "TomWebsite",
+	components: {
+		LanguageChart,
+	},
 	data() {
 		return {
+			usedLanguages: {
+				html: "HTML",
+				css: "CSS",
+				javaScript: "JavaScript",
+				shell: "Shell",
+			},	
+			repoUrl: "https://api.github.com/repos/3tw/TomWebsite/languages",		
 			p1Title: `Tom's Web Portfolio`,
 			description1: `First of all, Tom is a sculptor. He is also my brother. What he asked for is a portfolio with a lot of white space that is gradualy filled up with content as you navigate through. The design had to be minimalistic with a paper-like feel to it.`,
 			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,

@@ -74,7 +74,7 @@ export default {
 				html: "HTML",
 				css: "CSS",
 				javaScript: "JavaScript",
-				shell: "Shell"
+				shell: "Shell",
 			},	
 			repoUrl: "https://api.github.com/repos/3tw/T3V/languages",		
 			p1Title: `Tek treh vrhov`,

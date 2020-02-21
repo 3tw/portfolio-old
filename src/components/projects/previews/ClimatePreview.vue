@@ -23,5 +23,5 @@ export default {
 
 <style lang="sass" scoped>
 .hover-text-wrap.p3
-	background-color: $gray
+	background-color: $lime
 </style>

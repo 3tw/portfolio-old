@@ -23,5 +23,5 @@ export default {
 
 <style lang="sass" scoped>
 .hover-text-wrap.p2
-	background-color: $blue
+	background-color: $blue2
 </style>

@@ -44,7 +44,7 @@ export default {
 
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,600&display=swap');
 
 @font-face
 	font-family: "CABNDWebBold"
