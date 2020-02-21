@@ -4,7 +4,7 @@
 			<span v-bind:style="vueBar" v-if="vueBar.width !== null">random</span>
 			<span v-bind:style="htmlBar" v-if="htmlBar.width !== null">html</span>
 			<span v-bind:style="cssBar" v-if="cssBar.width !== null">css</span>
-			<span v-bind:style="jsBar" v-if="jsBar.width !== null">js</span>
+			<span v-bind:style="javascriptBar" v-if="javascriptBar.width !== null">js</span>
 			<span v-bind:style="shellBar" v-if="shellBar.width !== null">shell</span>
 		</div>
 		<div class="language-keys"></div>
@@ -47,7 +47,7 @@ export default {
 				fontSize: "10px",
 				width: null
 			},
-			jsBar: {
+			javascriptBar: {
 				color: "#FFDC00",
 				backgroundColor: "#FFDC00",
 				lineHeight: "10px",
@@ -83,29 +83,20 @@ export default {
 		
 	},	
 	methods: {
-		/*updateArray: function () {
-			let values = Object.values(this.usedLanguages);
-			let arrayLength = values.length // without this variable the loop doesn't start
-			for (let i=0; i < arrayLength; i++) {
-				this.$set(this.languagesArray, i, values[i])
-			}
-			console.log(this.languagesArray)
-			console.log(values)
-		},*/
 		updateLanguages: function () {
 			//let selectedLanguages = this.usedLanguages;
 			let fetchedLanguages = this.languages;
-			let languagesArray = Object.values(this.usedLanguages);
+			let languagesValues = Object.values(this.usedLanguages);
+			//let languagesKeys = Object.keys(this.usedLanguages);
 			let sum = 0;
 
-			for (let i = 0; i < languagesArray.length; i++) {
-				let item = languagesArray[i];
+			for (let i = 0; i < languagesValues.length; i++) {
+				let item = languagesValues[i];
 				sum += fetchedLanguages[item];	
 			}
 
 			class Language {
-				constructor (name, fetchedName){
-					this.name = name;
+				constructor (fetchedName){
 					this.fetchedName = fetchedName
 				}
 				percentage() {
@@ -116,19 +107,13 @@ export default {
 					return rounded + "%"
 				}
 			}
-
 			
-
-			let html = new Language("html", "HTML")
-			console.log (html.percentage())
-
-			
-			/*
-			is.$set(this.htmlBar, "width", htmlWidth + "%");
-			this.$set(this.cssBar, "width", cssWidth + "%");
-			this.$set(this.jsBar, "width", jsWidth + "%");
-			this.$set(this.shellBar, "width", shellWidth + "%");
-			//this.$set(this.vueBar, "width", vueWidth + "%"); */
+			for (let i = 0; i < languagesValues.length; i++) {
+				let fetchedName = languagesValues[i];
+				let dataObject = `this.${fetchedName.toLowerCase()}Bar`;
+				let instance = new Language (fetchedName);
+				this.$set(eval(dataObject), "width", instance.percentage());
+			}
 		},
 	},
 };
