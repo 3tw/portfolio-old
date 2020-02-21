@@ -8,11 +8,11 @@
 			<span v-bind:style="shellBar" v-if="shellBar.width !== null">.</span>
 		</div>
 		<div class="language-keys">
-			<span class="vue" v-if="vueBar.width !== null">vue {{vueBar.width}}</span>
-			<span class="html" v-if="htmlBar.width !== null">html {{htmlBar.width}}</span>
-			<span class="css" v-if="cssBar.width !== null">css {{cssBar.width}}</span>
-			<span class="js" v-if="javascriptBar.width !== null">javascript {{javascriptBar.width}}</span>
-			<span class="shell" v-if="shellBar.width !== null">shell {{shellBar.width}}</span>
+			<span class="vue" v-if="vueBar.width !== null"> vue {{vueBar.width}}</span>
+			<span class="html" v-if="htmlBar.width !== null"> html {{htmlBar.width}}</span>
+			<span class="css" v-if="cssBar.width !== null"> css {{cssBar.width}}</span>
+			<span class="js" v-if="javascriptBar.width !== null"> javascript {{javascriptBar.width}}</span>
+			<span class="shell" v-if="shellBar.width !== null"> shell {{shellBar.width}}</span>
 		</div>
 	</div>
 </template>
@@ -47,8 +47,8 @@ export default {
 				width: null
 			},
 			cssBar: {
-				color: "#f5ed5c",
-				backgroundColor: "#f5ed5c",
+				color: "#FFE40A",
+				backgroundColor: "#FFE40A",
 				lineHeight: "20px",
 				fontSize: "1px",
 				width: null
@@ -121,6 +121,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.language-chart
+	margin: 1.5rem 0 1.25rem 0
 .language-bar
     width: 100%
     overflow: hidden
@@ -128,7 +130,6 @@ export default {
 .language-keys
 	display: flex
 	justify-content: flex-start
-	margin: 0.5rem 0 1rem 0
 	font-weight: 600
 	
 .language-keys span
@@ -145,6 +146,6 @@ export default {
 	background-color: $yellow
 
 @media screen and ( min-width: 700px )
-	.language-bar
+	.language-chart
 		margin: 0
 </style>
