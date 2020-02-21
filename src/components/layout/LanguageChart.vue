@@ -1,8 +1,8 @@
 <template>
 	<div class="language-chart">
 		<div class="language-bar">
-			<span v-bind:style="vueBar" v-if="vueBar.width !== null" >random</span>
-			<span v-bind:style="htmlBar" v-if="htmlBar.width !== null" >html</span>
+			<span v-bind:style="vueBar" v-if="vueBar.width !== null">random</span>
+			<span v-bind:style="htmlBar" v-if="htmlBar.width !== null">html</span>
 			<span v-bind:style="cssBar" v-if="cssBar.width !== null">css</span>
 			<span v-bind:style="jsBar" v-if="jsBar.width !== null">js</span>
 			<span v-bind:style="shellBar" v-if="shellBar.width !== null">shell</span>
@@ -15,7 +15,14 @@
 export default {
 	name: "LanguageChart",
 	props: {
-		repoUrl: String,
+		repoUrl: {
+			type: String,
+			required: true,
+		},
+		usedLanguages: {
+			type: Object,
+			required: true,
+		},
 	},
 	data() {
 		return {
@@ -54,58 +61,74 @@ export default {
 				fontSize: "10px",
 				width: null
 			},
-			languages: null,
+			languages: null
 		};
 	},
 	mounted () {
+		// make axios request
 		const axios = require("axios")
 		axios
 			.get(this.repoUrl)
 			// use arrow functions - they don't have their own "this"
 			.then(response => {
 				this.languages = response.data;
+				//this.updateArray()
 				this.updateLanguages()
 			})
 			.catch(error => {
 				console.log(error);
 			})
 			.then(() => {});
+
+		
 	},	
 	methods: {
+		/*updateArray: function () {
+			let values = Object.values(this.usedLanguages);
+			let arrayLength = values.length // without this variable the loop doesn't start
+			for (let i=0; i < arrayLength; i++) {
+				this.$set(this.languagesArray, i, values[i])
+			}
+			console.log(this.languagesArray)
+			console.log(values)
+		},*/
 		updateLanguages: function () {
+			//let selectedLanguages = this.usedLanguages;
+			let fetchedLanguages = this.languages;
+			let languagesArray = Object.values(this.usedLanguages);
 			let sum = 0;
-			let html = this.languages.HTML;
-			let css = this.languages.CSS;
-			let js = this.languages.JavaScript;
-			let shell = this.languages.Shell;
-			//let vue = this.lanugages.Vu
 
-			let languagesArray = [
-				html, 
-				css,
-				js,
-				shell,
-				//vue
-			];
-
-			// count only present languages
 			for (let i = 0; i < languagesArray.length; i++) {
-				if (languagesArray[i] != undefined) {
-					sum += languagesArray[i]
+				let item = languagesArray[i];
+				sum += fetchedLanguages[item];	
+			}
+
+			class Language {
+				constructor (name, fetchedName){
+					this.name = name;
+					this.fetchedName = fetchedName
+				}
+				percentage() {
+					let valueName = this.fetchedName;
+					let value = fetchedLanguages[valueName];
+					let percentage = (100 * value) / sum;
+					let rounded = Math.round( percentage * 10 ) / 10;
+					return rounded + "%"
 				}
 			}
 
-			let htmlWidth = (100 * html) / sum;
-			let cssWidth = (100 * css) / sum;
-			let jsWidth = (100 * js) / sum;
-			let shellWidth = (100 * shell) / sum;
-			//let vueWidth = (100 * vue) / sum
+			
 
-			this.$set(this.htmlBar, "width", htmlWidth + "%");
+			let html = new Language("html", "HTML")
+			console.log (html.percentage())
+
+			
+			/*
+			is.$set(this.htmlBar, "width", htmlWidth + "%");
 			this.$set(this.cssBar, "width", cssWidth + "%");
 			this.$set(this.jsBar, "width", jsWidth + "%");
 			this.$set(this.shellBar, "width", shellWidth + "%");
-			//this.$set(this.vueBar, "width", vueWidth + "%");
+			//this.$set(this.vueBar, "width", vueWidth + "%"); */
 		},
 	},
 };

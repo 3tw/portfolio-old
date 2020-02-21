@@ -17,7 +17,7 @@
 <script>
 import NavBar from "./components/layout/NavBar.vue";
 import Footer from "./components/layout/Footer.vue";
-import PageTransition from "./components/PageTransition.vue";
+import PageTransition from "./components/layout/PageTransition.vue";
 
 export default {
 	name: "app",

@@ -1,7 +1,11 @@
 <template>
 	<div class="project-content grid">
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
-		<!--<LanguageChart v-bind:repoUrl='"https://api.github.com/repos/3tw/T3V/languages"' class="column-1-4"/>-->
+		<LanguageChart 
+			v-bind:repoUrl="repoUrl"
+			v-bind:used-languages="usedLanguages"
+			class="column-1-4"/>
+
 		<div class="proj-description bottom-padding-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
@@ -57,16 +61,22 @@
 </template>
 
 <script>
-//import LanguageChart from "../layout/LanguageChart.vue";
+import LanguageChart from "../layout/LanguageChart.vue";
 
 export default {
 	name: "T3V",
 	components: {
-		//LanguageChart,
+		LanguageChart,
 	},
 	data() {
 		return {
-			repoURL: `"https://api.github.com/repos/3tw/T3V/languages"`,
+			usedLanguages: {
+				html: "HTML",
+				css: "CSS",
+				javaScript: "JavaScript",
+				shell: "Shell"
+			},	
+			repoUrl: "https://api.github.com/repos/3tw/T3V/languages",		
 			p1Title: `Tek treh vrhov`,
 			description1: `This is a race I am really passionate about. It takes place across three summits near my hometown in Western Slovenia. In 2019 I decided to ran the race myself. That is when I got in touch with the organisers and offered to create a new website for the event. They agreed! The goal was clear. We wanted to make a website that has strong imagery and is easy to use - especially for those who want to spend less time online and more time running.`,
 			description2: `The presence of header images is contrasted with clear layout that allows the user to quickly skim through the content and find out more informations about the race.`,
