@@ -3,7 +3,6 @@
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
 		<LanguageChart 
 			v-bind:repoUrl="repoUrl"
-			v-bind:used-languages="usedLanguages"
 			class="column-1-4"/>
 
 		<div class="proj-description bottom-padding-1 column-1-4">
@@ -70,12 +69,6 @@ export default {
 	},
 	data() {
 		return {
-			usedLanguages: {
-				html: "HTML",
-				css: "CSS",
-				javaScript: "JavaScript",
-				shell: "Shell",
-			},	
 			repoUrl: "https://api.github.com/repos/3tw/T3V/languages",		
 			p1Title: `Tek treh vrhov`,
 			description1: `This is a race I am really passionate about. It takes place across three summits near my hometown in Western Slovenia. In 2019 I decided to ran the race myself. That is when I got in touch with the organisers and offered to create a new website for the event. They agreed! The goal was clear. We wanted to make a website that has strong imagery and is easy to use - especially for those who want to spend less time online and more time running.`,

@@ -28,15 +28,13 @@ export default {
 			if (transitionType === "slide") {
 				// detect direction of route change based on path length
 				const toDepth = to.path.split("/").length;
-                const fromDepth = from.path.split("/").length;
-				transitionType = toDepth < fromDepth ? "slide-right" : "slide-left";
-
-                this.transitionType = transitionType || DEFAULT_TRANSITION_TYPE;
-
-            } else {
-                this.transitionType = DEFAULT_TRANSITION_TYPE
-            }
-            next()
+        const fromDepth = from.path.split("/").length;
+        transitionType = toDepth < fromDepth ? "slide-right" : "slide-left";
+        this.transitionType = transitionType || DEFAULT_TRANSITION_TYPE;
+        } else {
+            this.transitionType = DEFAULT_TRANSITION_TYPE
+        }
+        next()
 		});
 	},
 };

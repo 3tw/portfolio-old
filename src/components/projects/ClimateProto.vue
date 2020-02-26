@@ -3,7 +3,6 @@
 		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
 		<LanguageChart 
 			v-bind:repoUrl="repoUrl"
-			v-bind:used-languages="usedLanguages"
 			class="column-1-4"/>
 
 		<div class="proj-description column-1-4">
@@ -52,11 +51,6 @@ export default {
 	},
 	data() {
 		return {
-			usedLanguages: {
-				html: "HTML",
-				css: "CSS",
-				javaScript: "JavaScript",
-			},
 			repoUrl: "https://api.github.com/repos/3tw/ClimatePrototype/languages",		
 			p1Title: `Climate Awareness Prototype`,
 			description1: `I came up with the Climate Awareness Prototype when I was applying for people.ooo workshop. The challenge was to come up with an idea that would effectively communicate the effects of climate change. I approached the task by transgressing the "User First" paradigm. The main idea behind the prototype is that the disruptive nature of climate change shouldn't be simply presented as a consumable content.`,
