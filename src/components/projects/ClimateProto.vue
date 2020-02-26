@@ -37,6 +37,11 @@
 				rel="noopener noreferrer"
 				class="btn"
 			>View on GitHub</a>
+            <a href="https://3tw.github.io/ClimatePrototype/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn"
+			>View Online</a>
 		</div>
 	</div>
 </template>
