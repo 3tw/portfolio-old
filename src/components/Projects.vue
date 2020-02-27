@@ -1,13 +1,19 @@
 <template>
 	<div class="projects-grid bottom-padding-1">
 		<div class="project-item">
-			<router-link to="/projects/T3V" class="projects"><T3VPreview /></router-link>
+			<router-link to="/projects/T3V" class="projects">
+				<T3VPreview />
+			</router-link>
 		</div>
 		<div class="project-item">
-			<router-link to="/projects/tom-website" class="projects"><TomPreview /></router-link>
+			<router-link to="/projects/tom-website" class="projects">
+				<TomPreview />
+			</router-link>
 		</div>
 		<div class="project-item">
-			<router-link to="/projects/climate-prototype" class="projects"><ClimatePreview /></router-link>
+			<router-link to="/projects/climate-prototype" class="projects">
+				<ClimatePreview />
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -25,7 +31,7 @@ export default {
 		TomPreview,
 		T3VPreview,
 		ClimatePreview
-	},
+	}
 };
 </script>
 
@@ -40,9 +46,6 @@ export default {
 	position: relative
 .item-wrap img
 	width: 100%
-.item-wrap:hover .hover-text-wrap
-	visibility: visible
-	opacity: 1
 .hover-text-wrap
 	position: absolute
 	top: 0
@@ -51,8 +54,8 @@ export default {
 	left: 0
 	visibility: visible
 	opacity: 1
-	transition: opacity 0.3s ease, visibility 0.3s ease
 	line-height: 1.4em
+	transition: opacity .5s ease
 .image-text
 	position: absolute
 	top: 50%
@@ -78,21 +81,18 @@ export default {
 		overflow-x: scroll
 		overflow-y: hidden
 		scroll-snap-type: x proximity
-		margin: 2rem 3.175rem 0 3.175rem
+		margin: 2rem 3.175rem 2rem 3.175rem
 	.projects-grid:hover
 		overflow-x: auto
-
+	.item-wrap:hover .hover-text-wrap,
+	.item-wrap:hover .image-text
+		opacity: 0
 	.project-item
 		scroll-snap-align: center
 	.item-wrap img
 		border-radius: 10px
 	.hover-text-wrap
 		border-radius: 8px
-	.hover-text-wrap.p1,
-	.hover-text-wrap.p2,
-	.hover-text-wrap.p3,
-		visibility: hidden
-		opacity: 0
 	.bottom-padding-1
 		padding-bottom: 1rem
 	
