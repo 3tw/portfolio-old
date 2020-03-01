@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import VueAnalytics from 'vue-analytics';
+import VueGtag from "vue-gtag";
 import axios from 'axios';
 
 Vue.config.productionTip = false
@@ -10,9 +10,9 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 // config. for VueAnalytics
-Vue.use(VueAnalytics, {
-  id: 'UA-157606098-1'
-});
+Vue.use(VueGtag, {
+	config: { id: "UA-157606098-1" }
+  });
 
 new Vue({
   router,
