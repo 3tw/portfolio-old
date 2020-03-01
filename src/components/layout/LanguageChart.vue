@@ -87,6 +87,7 @@ export default {
 			let fetchedLanguages = this.languages;
 			let usedLanguages = this.usedLanguages;
 			let sum = 0;
+			let totalPercentage = 0;
 
 			for (let i = 0; i < usedLanguages.length; i++) {
 				let item = usedLanguages[i];
@@ -102,16 +103,23 @@ export default {
 					let value = fetchedLanguages[valueName];
 					let percentage = (100 * value) / sum;
 					let rounded = Math.round(percentage * 10) / 10;
-					return rounded + "%";
+					return rounded;
 				}
 			}
 
-			for (let i = 0; i < usedLanguages.length; i++) {
+			for (let i = 0; i < usedLanguages.length - 1; i++) {
 				let item = usedLanguages[i];
 				let dataObject = `this.${item.toLowerCase()}Bar`;
 				let instance = new Language(item);
-				this.$set(eval(dataObject), "width", instance.percentage());
+				this.$set(eval(dataObject), "width", instance.percentage() + "%");
+				totalPercentage += instance.percentage();
 			}
+			
+			// compute last item seperately to insure the totalPercentage = 100
+			let lastItem = usedLanguages[usedLanguages.length - 1]
+			let lastObject = `this.${lastItem.toLowerCase()}Bar`;
+			let lastPercentage = Math.round((100 - totalPercentage) * 10) / 10;
+			this.$set(eval(lastObject), "width", lastPercentage + "%");
 		}
 	}
 };
@@ -128,9 +136,9 @@ export default {
 	display: flex
 	justify-content: flex-start
 	font-weight: 600
-	
 .language-keys span
 	padding: 1px 10px 1px 10px
+	flex: 1
 .html
 	background-color: $lime
 .vue
