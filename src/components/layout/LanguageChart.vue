@@ -50,8 +50,8 @@ export default {
 				width: null
 			},
 			javascriptBar: {
-				color: "#788DF4",
-				backgroundColor: "#788DF4",
+				color: "#ffa58f",
+				backgroundColor: "#ffa58f",
 				lineHeight: "20px",
 				fontSize: "10p",
 				width: null
@@ -138,7 +138,7 @@ export default {
 .shell
 	background-color: $gray
 .js
-	background-color: $blue
+	background-color: $coralRed
 .css
 	background-color: $yellow
 
