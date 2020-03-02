@@ -1,18 +1,18 @@
 <template>
 	<div class="language-chart">
 		<div class="language-bar">
-			<span v-bind:style="vueBar" v-if="vueBar.width !== null">.</span>
-			<span v-bind:style="htmlBar" v-if="htmlBar.width !== null">.</span>
-			<span v-bind:style="cssBar" v-if="cssBar.width !== null">.</span>
-			<span v-bind:style="javascriptBar" v-if="javascriptBar.width !== null">.</span>
-			<span v-bind:style="shellBar" v-if="shellBar.width !== null">.</span>
+			<span :style="vueBar" v-if="vueBar.width">.</span>
+			<span :style="htmlBar" v-if="htmlBar.width">.</span>
+			<span :style="cssBar" v-if="cssBar.width">.</span>
+			<span :style="javascriptBar" v-if="javascriptBar.width">.</span>
+			<span :style="shellBar" v-if="shellBar.width">.</span>
 		</div>
 		<div class="language-keys">
-			<span class="vue" v-if="vueBar.width !== null">vue {{vueBar.width}}</span>
-			<span class="html" v-if="htmlBar.width !== null">html {{htmlBar.width}}</span>
-			<span class="css" v-if="cssBar.width !== null">css {{cssBar.width}}</span>
-			<span class="js" v-if="javascriptBar.width !== null">javascript {{javascriptBar.width}}</span>
-			<span class="shell" v-if="shellBar.width !== null">shell {{shellBar.width}}</span>
+			<span class="vue" v-if="vueBar.width">vue {{vueBar.width}}</span>
+			<span class="html" v-if="htmlBar.width">html {{htmlBar.width}}</span>
+			<span class="css" v-if="cssBar.width">css {{cssBar.width}}</span>
+			<span class="js" v-if="javascriptBar.width">javascript {{javascriptBar.width}}</span>
+			<span class="shell" v-if="shellBar.width">shell {{shellBar.width}}</span>
 		</div>
 	</div>
 </template>
@@ -29,52 +29,52 @@ export default {
 	data() {
 		return {
 			vueBar: {
-				color: "#345aff",
-				backgroundColor: "#346aff",
+				color: "#32ff76",
+				backgroundColor: "#32ff76",
 				lineHeight: "20px",
 				fontSize: "1px",
-				width: null
+				width: undefined
 			},
 			htmlBar: {
 				color: "#eafad4",
 				backgroundColor: "#eafad4",
 				lineHeight: "20px",
 				fontSize: "1px",
-				width: null
+				width: undefined
 			},
 			cssBar: {
 				color: "#FFE40A",
 				backgroundColor: "#FFE40A",
 				lineHeight: "20px",
 				fontSize: "1px",
-				width: null
+				width: undefined
 			},
 			javascriptBar: {
 				color: "#ffa58f",
 				backgroundColor: "#ffa58f",
 				lineHeight: "20px",
 				fontSize: "10p",
-				width: null
+				width: undefined
 			},
 			shellBar: {
 				color: "#c0c0c0",
 				backgroundColor: "#c0c0c0",
 				lineHeight: "20px",
 				fontSize: "1px",
-				width: null
+				width: undefined
 			},
-            languages: null,
-            usedLanguages: null
+			languages: undefined,
+			usedLanguages: undefined,			
 		};
 	},
 	mounted() {
+		// Axios request
 		const axios = require("axios");
 		axios
 			.get(this.repoUrl)
-			// use arrow functions - they don't have their own "this"
 			.then(response => {
-                this.languages = response.data;
-                this.usedLanguages = Object.keys(this.languages);
+				this.languages = response.data;
+				this.usedLanguages = Object.keys(this.languages);
 				this.updateLanguages();
 			})
 			.catch(error => {
@@ -89,11 +89,6 @@ export default {
 			let sum = 0;
 			let totalPercentage = 0;
 
-			for (let i = 0; i < usedLanguages.length; i++) {
-				let item = usedLanguages[i];
-				sum += fetchedLanguages[item];
-			}
-
 			class Language {
 				constructor(fetchedName) {
 					this.fetchedName = fetchedName;
@@ -107,16 +102,27 @@ export default {
 				}
 			}
 
+			// get sum
+			for (let i = 0; i < usedLanguages.length; i++) {
+				let item = usedLanguages[i];
+				sum += fetchedLanguages[item];
+			}
+
+			// get and set width for each language
 			for (let i = 0; i < usedLanguages.length - 1; i++) {
 				let item = usedLanguages[i];
 				let dataObject = `this.${item.toLowerCase()}Bar`;
 				let instance = new Language(item);
-				this.$set(eval(dataObject), "width", instance.percentage() + "%");
+				this.$set(
+					eval(dataObject),
+					"width",
+					instance.percentage() + "%"
+				);
 				totalPercentage += instance.percentage();
 			}
-			
-			// compute last item seperately to insure the totalPercentage = 100
-			let lastItem = usedLanguages[usedLanguages.length - 1]
+
+			// compute last language seperately to insure the totalPercentage = 100
+			let lastItem = usedLanguages[usedLanguages.length - 1];
 			let lastObject = `this.${lastItem.toLowerCase()}Bar`;
 			let lastPercentage = Math.round((100 - totalPercentage) * 10) / 10;
 			this.$set(eval(lastObject), "width", lastPercentage + "%");
@@ -138,17 +144,18 @@ export default {
 	font-weight: 600
 .language-keys span
 	padding: 1px 10px 1px 10px
-	flex: 1
+	flex: 1 1 auto
 .html
 	background-color: $lime
 .vue
-	background-color: $blue2
+	background-color: $green
 .shell
 	background-color: $gray
 .js
 	background-color: $coralRed
 .css
 	background-color: $yellow
+	flex-shrink: 2
 
 @media screen and ( min-width: 700px )
 	.language-chart
