@@ -1,5 +1,5 @@
 <template>
-	<div class="projects-grid bottom-padding-1">
+	<div class="projects-grid">
 		<div class="project-item">
 			<router-link to="/projects/T3V" class="projects">
 				<T3VPreview />
@@ -80,8 +80,13 @@ export default {
 		grid-gap: 2rem
 		overflow-x: scroll
 		overflow-y: hidden
-		scroll-snap-type: x proximity
+		scroll-snap-type: x mandatory
+		-ms-overflow-style: none
+		scrollbar-width: none
+		scroll-overscroll-behavior: smooth
 		margin: 2rem 3.175rem 2rem 3.175rem
+	.projects-grid::-webkit-scrollbar
+		display: none
 	.projects-grid:hover
 		overflow-x: auto
 	.item-wrap:hover .hover-text-wrap,
@@ -93,8 +98,6 @@ export default {
 		border-radius: 10px
 	.hover-text-wrap
 		border-radius: 8px
-	.bottom-padding-1
-		padding-bottom: 1rem
 	
 @media screen and ( min-width: 1200px )
 	.projects-grid

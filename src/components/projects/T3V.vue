@@ -1,48 +1,48 @@
 <template>
 	<div class="project-content grid">
-		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
+		<h1 class="proj-title bp-1 column-1-4">{{p1Title}}</h1>
 		<LanguageChart 
 			v-bind:repoUrl="repoUrl"
 			class="column-1-4"/>
 
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 tp-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/t3v-cover.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/t3v-about.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<p>{{description2}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/t3v-race.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
-		<div class="image-wrap-mobile bottom-padding-3 column-1-2">
+		<div class="image-wrap-mobile bp-3 column-1-2">
 			<img src="@/assets/images/t3v-m-races.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap-mobile bottom-padding-3 column-2-3">
+		<div class="image-wrap-mobile bp-3 column-2-3">
 			<img src="@/assets/images/t3v-m-contact.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap-mobile bottom-padding-3 column-3-4">
+		<div class="image-wrap-mobile bp-3 column-3-4">
 			<img src="@/assets/images/t3v-m-menu.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap-mobile bottom-padding-3 column-4-5">
+		<div class="image-wrap-mobile bp-3 column-4-5">
 			<img src="@/assets/images/t3v-m-kontakt.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<span v-html="description4"></span>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/t3v-contact.jpg" alt="cover-photo" />
 		</div>
 
-		<div class="column-center top-padding-3">
+		<div class="column-center tp-3">
 			<a
 				href="https://github.com/3tw/T3V"
 				target="_blank"

@@ -1,6 +1,6 @@
 <template>
 	<div id="about" class="grid">
-		<div class="column-1-4 bottom-padding-2">
+		<div class="column-1-4 bp-1">
 			<span v-html="bio"></span>
 			<br>
 			<br>

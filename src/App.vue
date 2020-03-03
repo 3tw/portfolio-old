@@ -106,19 +106,15 @@ h2
 a.btn 
 	color: $red
 
-.top-margin-3
-	margin-top: 3rem
-.top-margin-2
-	margin-top: 2rem
-.top-padding-2
+.tp-1
+	padding-top: 1rem
+.tp-2
 	padding-top: 2rem
-.top-padding-3
+.tp-3
 	padding-top: 3rem
-.bottom-padding-1
+.bp-1
 	padding-bottom: 1rem
-.bottom-padding-2
-	padding-bottom: 2rem
-.bottom-padding-3
+.bp-3
 	padding-bottom: 3rem
 .column-center
 	text-align: center

@@ -1,53 +1,53 @@
 <template>
 	<div class="project-content grid">
-		<h1 class="proj-title bottom-padding-1 column-1-4">{{p1Title}}</h1>
+		<h1 class="proj-title bp-1 column-1-4">{{p1Title}}</h1>
 		<LanguageChart 
 			v-bind:repoUrl="repoUrl"
 			class="column-1-4"/>
 			
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 tp-1 column-1-4">
 			<p>{{description1}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/tom-cover.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<p>{{description2}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-1 column-1-5">
+		<div class="image-wrap bp-1 column-1-5">
 			<img src="@/assets/images/tom-exh-menu.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/tom-about.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-3 column-1-5">
+		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/tom-exh-main.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description bottom-padding-1 column-1-4">
+		<div class="proj-description bp-1 column-1-4">
 			<span v-html="description4"></span>
 		</div>
-		<div class="image-wrap bottom-padding-1 column-1-4">
+		<div class="image-wrap bp-1 column-1-4">
 			<img src="@/assets/images/tom-gallery.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-3 column-4-5">
+		<div class="image-wrap bp-3 column-4-5">
 			<img src="@/assets/images/tom-m-gallery.jpg" alt="cover-photo" />
 		</div>
-		<div class="proj-description top-padding-2 bottom-padding-1 column-1-4">
+		<div class="proj-description tp-2 bp-1 column-1-4">
 			<p>{{description5}}</p>
 		</div>
-		<div class="image-wrap bottom-padding-1 column-2-3">
+		<div class="image-wrap bp-1 column-2-3">
 			<img src="@/assets/images/tom-m-exh-main.jpg" alt="cover-photo" />
 		</div>
-		<div class="image-wrap bottom-padding-1 column-3-4">
+		<div class="image-wrap bp-1 column-3-4">
 			<img src="@/assets/images/tom-m-proj-main.jpg" alt="cover-photo" />
 		</div>
 		
 		
 
-		<div class="column-center top-padding-3">
+		<div class="column-center tp-3">
 			<a
 				href="https://github.com/3tw/TomWebsite"
 				target="_blank"
