@@ -61,7 +61,7 @@ export default {
 			description1: `The idea for the Climate Awareness Prototype occurred to me when I was applying for people.ooo workshop. The challenge was to come up with a prototype that would effectively communicate the effects of climate change. I approached the task by transgressing the "User First" paradigm, thinking that the disruptive nature of climate change shouldn't be simply presented as a consumable content.`,
 			description2: `A wall of text covers the webpage. In contrast to the title the text appears rather small. We are discouraged from reading it. But even if the user decides to go through it, he cannot finish. The text slowly fades away and two short sentences appear. One after another.`,
 			description3: `The message is mediated through the disorder. Yet, the disorder is the message itself. The user is interrupted and for a brief moment reminded that he cannot hide from disastrous reality. Climate change suddenly affects not only the planet but our online experience.`,
-			description4: `The prototype could be implemented as a landing page. Some degree of interactivity would be added in order to offer "an escape" for the user who is eager to take action and stay on the website, before it disintegrates.`
+			description4: `This prototype could be implemented as a landing page. In this case, basic interactivity would be added to offer "an escape" for the user eager to take action. The user could proceed to the website before the text disintegrates.`
 		};
 	},
 };
