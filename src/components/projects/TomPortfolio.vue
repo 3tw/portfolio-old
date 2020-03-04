@@ -26,7 +26,6 @@
 				alt="Exhibition menu" />
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/tom-about.jpg" alt="cover-photo" />
 			<img src="@/assets/images/tom-about-m.jpg" 
 				srcset="@/assets/images/tom-about-m.jpg 650w,
 				@/assets/images/tom-about.jpg 750w"
