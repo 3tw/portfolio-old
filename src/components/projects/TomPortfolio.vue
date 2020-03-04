@@ -47,7 +47,6 @@
 			<span v-html="description4"></span>
 		</div>
 		<div class="image-wrap bp-1 column-1-4">
-			<img src="@/assets/images/tom-gallery.jpg" alt="cover-photo" />
 			<img src="@/assets/images/tom-gallery-m.jpg" 
 				srcset="@/assets/images/tom-gallery-m.jpg 650w,
 				@/assets/images/tom-gallery.jpg 750w"
