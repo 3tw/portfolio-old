@@ -29,11 +29,11 @@ export default {
 	created() {
 		let preload = new Array();
 
-		preload[0] = "../img/climate-cover3.42186855.jpg";
+		preload[0] = "../img/climate-cover3.e8b614e9.jpg ";
 		preload[1] = "../img/climate-cover3-m.c9987709.jpg";
-		preload[2] = "../img/t3v-cover.9980ce34.jpg";
+		preload[2] = "../img/t3v-cover.7f40649e.jpg";
 		preload[3] = "../img/t3v-cover-m.659e754b.jpg";
-		preload[4] = "../img/tom-preview.f9c03125.jpg";
+		preload[4] = "../img/tom-preview.a1d1a52d.jpg";
 		preload[5] = "../img/tom-preview-m.6cd1386e.jpg";
 
 		let loadedimages = new Array();
