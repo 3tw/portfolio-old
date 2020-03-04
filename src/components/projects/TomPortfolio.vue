@@ -9,47 +9,81 @@
 			<p>{{description1}}</p>
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/tom-cover.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-cover-m.jpg" 
+				srcset="@/assets/images/tom-cover-m.jpg 650w,
+				@/assets/images/tom-cover.jpg 750w"
+				sizes="100vw"
+				alt="Cover photo" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description2}}</p>
 		</div>
 		<div class="image-wrap bp-1 column-1-5">
-			<img src="@/assets/images/tom-exh-menu.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-exh-menu-m.jpg" 
+				srcset="@/assets/images/tom-exh-menu-m.jpg 650w,
+				@/assets/images/tom-exh-menu.jpg 750w"
+				sizes="100vw"
+				alt="Exhibition menu" />
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
 			<img src="@/assets/images/tom-about.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-about-m.jpg" 
+				srcset="@/assets/images/tom-about-m.jpg 650w,
+				@/assets/images/tom-about.jpg 750w"
+				sizes="100vw"
+				alt="About" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/tom-exh-main.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-exh-main-m.jpg" 
+				srcset="@/assets/images/tom-exh-main-m.jpg 650w,
+				@/assets/images/tom-exh-main.jpg 750w"
+				sizes="100vw"
+				alt="Exhibition" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<span v-html="description4"></span>
 		</div>
 		<div class="image-wrap bp-1 column-1-4">
 			<img src="@/assets/images/tom-gallery.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-gallery-m.jpg" 
+				srcset="@/assets/images/tom-gallery-m.jpg 650w,
+				@/assets/images/tom-gallery.jpg 750w"
+				sizes="100vw"
+				alt="Gallery" />
 		</div>
 		<div class="image-wrap bp-3 column-4-5">
-			<img src="@/assets/images/tom-m-gallery.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-m-gallery-m.jpg" 
+				srcset="@/assets/images/tom-m-gallery-m.jpg 650w,
+				@/assets/images/tom-m-gallery.jpg 750w"
+				sizes="100vw"
+				alt="Gallery mobile" />
 		</div>
 		<div class="proj-description tp-2 bp-1 column-1-4">
 			<p>{{description5}}</p>
 		</div>
 		<div class="image-wrap bp-1 column-2-3">
-			<img src="@/assets/images/tom-m-exh-main.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-m-exh-main-m.jpg" 
+				srcset="@/assets/images/tom-m-exh-main-m.jpg 650w,
+				@/assets/images/tom-m-exh-main.jpg 750w"
+				sizes="100vw"
+				alt="Exhibition mobile" />
 		</div>
 		<div class="image-wrap bp-1 column-3-4">
-			<img src="@/assets/images/tom-m-proj-main.jpg" alt="cover-photo" />
+			<img src="@/assets/images/tom-m-proj-main-m.jpg" 
+				srcset="@/assets/images/tom-m-proj-main-m.jpg 650w,
+				@/assets/images/tom-m-proj-main.jpg 750w"
+				sizes="100vw"
+				alt="Project gallery mobile" />
 		</div>
 		
 		
 
 		<div class="column-center tp-3">
 			<a
-				href="https://github.com/3tw/TomWebsite"
+				href="https://github.com/3tw/TomPortfolio"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="btn"
@@ -64,13 +98,13 @@
 import LanguageChart from "../layout/LanguageChart.vue";
 
 export default {
-	name: "TomWebsite",
+	name: "TomPortfolio",
 	components: {
 		LanguageChart,
 	},
 	data() {
 		return {
-			repoUrl: "https://api.github.com/repos/3tw/TomWebsite/languages",		
+			repoUrl: "https://api.github.com/repos/3tw/TomPortfolio/languages",		
 			p1Title: `Tom's Web Portfolio`,
 			description1: `First of all, Tom is a sculptor. He is also my brother. What he asked for is a portfolio with a lot of white space that is gradualy filled up with content as you navigate through. The design had to be minimalistic with a paper-like feel to it.`,
 			description2: `Right next to the navigation menu there is middle column. Sub-menus and descriptions are displayed here.`,

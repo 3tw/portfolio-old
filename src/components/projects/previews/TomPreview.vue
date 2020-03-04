@@ -1,6 +1,10 @@
 <template>
 	<div class="item-wrap">
-		<img src="@/assets/images/tom-preview.jpg" alt="Tom's Website preview photo" />
+		<img src="@/assets/images/tom-preview-m.jpg" 
+				srcset="@/assets/images/tom-preview-m.jpg 650w,
+				@/assets/images/tom-preview.jpg 750w"
+				sizes="100vw"
+				alt="Tom's Website preview photo" />
 		<div class="hover-text-wrap p1">
 			<div class="image-text">
 				<span class="item-title">{{p1Title}}</span>

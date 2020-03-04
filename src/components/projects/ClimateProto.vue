@@ -12,19 +12,31 @@
 			<p>{{description2}}</p>
 		</div>
 		<div class="image-wrap bp-1 column-1-5">
-			<img src="@/assets/images/climate-cover.jpg" alt="cover-photo" />
+			<img src="@/assets/images/climate-cover-m.jpg" 
+				srcset="@/assets/images/climate-cover-m.jpg 650w,
+				@/assets/images/climate-cover.jpg 750w"
+				sizes="100vw"
+				alt="Cover photo" />
 		</div>
 		<div class="image-wrap bp-1 column-1-5">
-			<img src="@/assets/images/climate-cover2.jpg" alt="cover-photo" />
+			<img src="@/assets/images/climate-cover2-m.jpg" 
+				srcset="@/assets/images/climate-cover2-m.jpg 650w,
+				@/assets/images/climate-cover2.jpg 750w"
+				sizes="100vw"
+				alt="Cover photo disappearing" />
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/climate-cover3.jpg" alt="cover-photo" />
+			<img src="@/assets/images/climate-cover3-m.jpg" 
+				srcset="@/assets/images/climate-cover3-m.jpg 650w,
+				@/assets/images/climate-cover3.jpg 750w"
+				sizes="100vw"
+				alt="Cover photo new text" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
 		<div class="image-wrap bp-3 column-1-4">
-			<img src="@/assets/images/climate-transition.gif" alt="cover-photo" />
+			<img src="@/assets/gif/climate-transition.gif" alt="cover-photo" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description4}}</p>

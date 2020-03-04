@@ -146,6 +146,10 @@ a.btn
 	width: 100%
 
 //media queries
+@media screen and ( min-width: 500px ) and ( max-width: 699px )
+	.image-wrap-mobile
+		min-width: 452px
+		max-width: 80%
 @media screen and ( min-width: 700px )
 	.grid
 		display: grid

@@ -27,9 +27,9 @@ const routes = [
     meta: {transitionType: 'slide'}
   },
   {
-    path: '/projects/tom-website',
-    name: 'TomWebsite',
-    component: () => import(/* webpackChunkName: "TomWebsite" */ '../components/projects/TomWebsite.vue'),
+    path: '/projects/tom-portfolio',
+    name: 'TomPortfolio',
+    component: () => import(/* webpackChunkName: "TomPortfolio" */ '../components/projects/TomPortfolio.vue'),
     meta: {transitionType: 'fade'}
   },
   {

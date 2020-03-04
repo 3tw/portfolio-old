@@ -1,6 +1,10 @@
 <template>
 	<div class="item-wrap">
-		<img src="@/assets/images/climate-cover3.jpg" alt="ClimatePrototype preview photo" />
+		<img src="@/assets/images/climate-cover3-m.jpg" 
+				srcset="@/assets/images/climate-cover3-m.jpg 650w,
+				@/assets/images/climate-cover3.jpg 750w"
+				sizes="100vw"
+				alt="ClimatePrototype preview photo" />
 		<div class="hover-text-wrap p3">
 			<div class="image-text">
 				<span class="item-title">{{p3Title}}</span>

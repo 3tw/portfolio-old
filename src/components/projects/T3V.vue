@@ -9,37 +9,69 @@
 			<p>{{description1}}</p>
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/t3v-cover.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-cover-m.jpg" 
+				srcset="@/assets/images/t3v-cover-m.jpg 650w,
+				@/assets/images/t3v-cover.jpg 750w"
+				sizes="100vw"
+				alt="Cover photo" />
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/t3v-about.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-about-m.jpg" 
+				srcset="@/assets/images/t3v-about-m.jpg 650w,
+				@/assets/images/t3v-about.jpg 750w"
+				sizes="100vw"
+				alt="About photo" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description2}}</p>
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/t3v-race.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-race-m.jpg" 
+				srcset="@/assets/images/t3v-race-m.jpg 650w,
+				@/assets/images/t3v-race.jpg 750w"
+				sizes="100vw"
+				alt="Race photo" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<p>{{description3}}</p>
 		</div>
 		<div class="image-wrap-mobile bp-3 column-1-2">
-			<img src="@/assets/images/t3v-m-races.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-races-m.jpg" 
+				srcset="@/assets/images/t3v-m-races-m.jpg 650w,
+				@/assets/images/t3v-m-races.jpg 750w"
+				sizes="100vw"
+				alt="Races photo" />
 		</div>
 		<div class="image-wrap-mobile bp-3 column-2-3">
-			<img src="@/assets/images/t3v-m-contact.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-contact-m.jpg" 
+				srcset="@/assets/images/t3v-m-contact-m.jpg 650w,
+				@/assets/images/t3v-m-contact.jpg 750w"
+				sizes="100vw"
+				alt="Contact photo" />
 		</div>
 		<div class="image-wrap-mobile bp-3 column-3-4">
-			<img src="@/assets/images/t3v-m-menu.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-menu-m.jpg" 
+				srcset="@/assets/images/t3v-m-menu-m.jpg 650w,
+				@/assets/images/t3v-m-menu.jpg 750w"
+				sizes="100vw"
+				alt="Menu photo" />
 		</div>
 		<div class="image-wrap-mobile bp-3 column-4-5">
-			<img src="@/assets/images/t3v-m-kontakt.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-m-kontakt-m.jpg" 
+				srcset="@/assets/images/t3v-m-kontakt-m.jpg 650w,
+				@/assets/images/t3v-m-kontakt.jpg 750w"
+				sizes="100vw"
+				alt="Kontakt photo" />
 		</div>
 		<div class="proj-description bp-1 column-1-4">
 			<span v-html="description4"></span>
 		</div>
 		<div class="image-wrap bp-3 column-1-5">
-			<img src="@/assets/images/t3v-contact.jpg" alt="cover-photo" />
+			<img src="@/assets/images/t3v-contact-m.jpg" 
+				srcset="@/assets/images/t3v-contact-m.jpg 650w,
+				@/assets/images/t3v-contact.jpg 750w"
+				sizes="100vw"
+				alt="Contakt photo" />
 		</div>
 
 		<div class="column-center tp-3">

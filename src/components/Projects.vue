@@ -6,7 +6,7 @@
 			</router-link>
 		</div>
 		<div class="project-item">
-			<router-link to="/projects/tom-website" class="projects">
+			<router-link to="/projects/tom-portfolio" class="projects">
 				<TomPreview />
 			</router-link>
 		</div>
