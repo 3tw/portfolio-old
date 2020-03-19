@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import LanguageChart from "../layout/LanguageChart.vue";
+import LanguageChart from "../../components/LanguageChart.vue";
 
 export default {
 	name: "ClimateProto",

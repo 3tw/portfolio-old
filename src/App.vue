@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import NavBar from "./components/layout/NavBar.vue";
-import Footer from "./components/layout/Footer.vue";
-import PageTransition from "./components/layout/PageTransition.vue";
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
+import PageTransition from "./components/PageTransition.vue";
 
 export default {
 	name: "app",

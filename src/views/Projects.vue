@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import TomPreview from "./projects/previews/TomPreview.vue";
-import T3VPreview from "./projects/previews/T3VPreview.vue";
-import ClimatePreview from "./projects/previews/ClimatePreview.vue";
+import TomPreview from "../components/previews/TomPreview.vue";
+import T3VPreview from "../components/previews/T3VPreview.vue";
+import ClimatePreview from "../components/previews/ClimatePreview.vue";
 
 export default {
 	data() {
