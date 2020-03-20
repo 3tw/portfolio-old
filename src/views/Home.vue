@@ -8,7 +8,7 @@
 import Showcase from "./Showcase.vue";
 
 export default {
-	name: "home",
+	name: "Home",
 	components: {
 		Showcase
 	}

@@ -4,9 +4,9 @@
 			<NavBar />
 		</div>
 		<div id="main">
-			<page-transition >
+			<PageTransitions>
 				<router-view />
-			</page-transition>
+			</PageTransitions>
 		</div>
 		<div id="foot">
 			<Footer />
@@ -17,14 +17,14 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
-import PageTransition from "./components/PageTransition.vue";
+import PageTransitions from "./components/PageTransitions.vue";
 
 export default {
-	name: "app",
+	name: "App",
 	components: {
 		NavBar,
 		Footer,
-		PageTransition
+		PageTransitions
 	},
 	created() {
 		let preload = new Array();
@@ -60,12 +60,12 @@ export default {
 	padding: 0
 
 html
-	font-size: 16px
+	font-size: 1em
 	min-height: 100%
 
 body
 	font-family: Muli, sans-serif
-	line-height: 1.4em
+	line-height: 1.2rem
 	min-width: 320px
 	height: 100vh
 	overflow-x: hidden
@@ -74,6 +74,12 @@ a
 	text-decoration: none
 
 h2
+	font-family: Muli, sans-serif
+	font-size: 1.875rem
+	line-height: 2.4rem
+	text-align: left	
+	
+h3
 	font-family: Muli, sans-serif
 	font-size: 1.875rem
 
@@ -127,13 +133,10 @@ a.btn
 // project display
 .project-content
 	margin: 0 1.5rem 0 1.5rem 
-.proj-title
-	text-align: left
-	line-height: 2rem
 .proj-description p,
 .proj-description span
-	line-height: 1.6rem
-	font-size: 1.2rem
+	font-size: 1.3rem
+	line-height: 1.95rem
 	font-weight: 300
 	color: $black
 .image-wrap,
@@ -188,8 +191,8 @@ a.btn
 		text-align: none
 	.proj-description p,
 	.proj-description span
-		line-height: 2rem
 		font-size: 1.5rem
+		line-height: 2.2rem
 	.image-wrap-mobile img
 		width: 100%
 

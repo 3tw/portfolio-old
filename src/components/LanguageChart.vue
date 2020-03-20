@@ -145,6 +145,8 @@ export default {
 .language-keys span
 	padding: 1px 10px 1px 10px
 	flex: 1 1 auto
+	&:last-child
+		padding-right: 0
 .html
 	background-color: $lime
 .vue

@@ -12,7 +12,7 @@ const DEFAULT_TRANSITION_TYPE = "fade";
 const DEFAULT_TRANSITION_MODE = 'out-in';
 
 export default {
-	name: "PageTransition",
+	name: "PageTransitions",
 	data() {
 		return {
             transitionType: DEFAULT_TRANSITION_TYPE,

@@ -1,12 +1,12 @@
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
+// const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
-    publicPath: '/',
-    css: {
-        loaderOptions: {
-            sass: {
-                prependData: `@import "@/styles/_variables.sass";`
-            }
-        }
-    },
- }
+	publicPath: '/',
+	css: {
+		loaderOptions: {
+			sass: {
+				prependData: `@import "@/styles/_variables.sass";`
+			}
+		}
+	}
+}

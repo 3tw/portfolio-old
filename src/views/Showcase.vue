@@ -39,23 +39,24 @@ export default {
 	margin: 0 1.5rem 0 1.5rem
 
 .heading
-	text-transform: uppercase
-	font-size: 1.4rem
-	font-family: 'CABNDWebBold', sans-serif
-	line-height: 2.5rem
-	color: $red
 	align-self: center
+	text-transform: uppercase
+	font-family: 'CABNDWebBold', sans-serif
+	font-size: 1.4rem
+	line-height: 2.6rem
+	-webkit-text-stroke-width: 2px
+	color: $red
 
 @media screen and ( min-width: 700px )
 	#showcase
 		margin: 0 3.175rem 0 3.175rem
 	.heading
 		font-size: 1.5rem
-		line-height: 2.7rem
+		line-height: 3rem
 @media screen and ( min-width: 800px )
 	.heading
 		font-size: 1.7rem
-		line-height: 3rem
+		line-height: 3.4rem
 
 @media screen and ( min-width: 1200px )
 	#showcase

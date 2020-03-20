@@ -24,6 +24,7 @@ import T3VPreview from "../components/previews/T3VPreview.vue";
 import ClimatePreview from "../components/previews/ClimatePreview.vue";
 
 export default {
+	name: "Projects",
 	data() {
 		return {};
 	},
@@ -63,9 +64,11 @@ export default {
 	transform: translate(-50%, -50%)
 .item-title
 	font-size: 1.6rem
+	line-height: 1.9rem
 	font-family: "CABNDWebBold", sans-serif
 .item-type
 	font-size: 1.4rem
+	line-height: 2.2rem
 
 ::-webkit-scrollbar-track
 	background: $black
