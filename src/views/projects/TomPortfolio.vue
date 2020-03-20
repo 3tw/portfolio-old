@@ -1,6 +1,6 @@
 <template>
 	<div class="project-content grid">
-		<h2 class="bp-1 column-1-4">{{p1Title}}</h2>
+		<h2 class="column-1-4">{{p1Title}}</h2>
 		<LanguageChart 
 			v-bind:repoUrl="repoUrl"
 			class="column-1-4"/>
