@@ -69,9 +69,25 @@ body
 	min-width: 320px
 	height: 100vh
 	overflow-x: hidden
+	
+a,
+button
+	text-decoration: none
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-tap-highlight-color: transparent
+	-webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+	&:focus,
+	&::-moz-focus-inner
+		border: none
+		outline: none
+		
 a
 	color: $black
-	text-decoration: none
 
 h2
 	font-family: Muli, sans-serif
